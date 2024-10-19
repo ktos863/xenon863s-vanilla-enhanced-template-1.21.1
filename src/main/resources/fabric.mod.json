@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "xenon863s-vanilla-enhanced",
+	"version": "${version}",
+	"name": "Xenon863's Vanilla Enhanced",
+	"description": "This mod adds new cool stuff to minecraft",
+	"authors": [
+		"Xenon863"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/xenon863s-vanilla-enhanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhanced"
+		],
+		"fabric-datagen": [
+			"com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhancedDataGenerator"
+		],
+		"client": [
+			"com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhancedClient"
+		]
+	},
+	"mixins": [
+		"xenon863s-vanilla-enhanced.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
