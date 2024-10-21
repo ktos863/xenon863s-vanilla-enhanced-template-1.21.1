@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "T": {
+      "item": "xenon863s-vanilla-enhanced:thick_stick"
+    }
+  },
+  "pattern": [
+    "D",
+    "T",
+    "T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_shovel"
+  }
+}

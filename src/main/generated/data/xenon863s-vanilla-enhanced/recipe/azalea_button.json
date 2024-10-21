@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "xenon863s-vanilla-enhanced:azalea_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:azalea_button"
+  }
+}

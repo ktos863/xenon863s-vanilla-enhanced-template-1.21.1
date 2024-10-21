@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_open",
+  "textures": {
+    "texture": "xenon863s-vanilla-enhanced:block/azalea_trapdoor"
+  }
+}

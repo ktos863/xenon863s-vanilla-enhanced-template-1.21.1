@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "xenon863s-vanilla-enhanced:mud_ball"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:thick_stick"
+  }
+}

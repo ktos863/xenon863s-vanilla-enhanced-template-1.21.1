@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "T": {
+      "item": "xenon863s-vanilla-enhanced:thick_stick"
+    }
+  },
+  "pattern": [
+    "GGG",
+    " T ",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:golden_pickaxe"
+  }
+}

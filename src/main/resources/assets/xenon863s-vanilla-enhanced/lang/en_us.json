@@ -4,5 +4,19 @@
   "item.xenon863s-vanilla-enhanced.mud_ball": "Mud Ball",
   "item.xenon863s-vanilla-enhanced.thick_stick": "Thick Stick",
 
-  "block.xenon863s-vanilla-enhanced.termitary": "Termitary"
+  "block.xenon863s-vanilla-enhanced.termitary": "Termitary",
+
+  "block.xenon863s-vanilla-enhanced.azalea_log": "Azalea Log",
+  "block.xenon863s-vanilla-enhanced.azalea_wood": "Azalea Wood",
+  "block.xenon863s-vanilla-enhanced.stripped_azalea_log": "Stripped Azalea Log",
+  "block.xenon863s-vanilla-enhanced.stripped_azalea_wood": "Stripped Azalea Wood",
+  "block.xenon863s-vanilla-enhanced.azalea_planks": "Azalea Planks",
+  "block.xenon863s-vanilla-enhanced.azalea_stairs": "Azalea Stairs",
+  "block.xenon863s-vanilla-enhanced.azalea_slab": "Azalea Slab",
+  "block.xenon863s-vanilla-enhanced.azalea_fence": "Azalea Fence",
+  "block.xenon863s-vanilla-enhanced.azalea_fence_gate": "Azalea Fence Gate",
+  "block.xenon863s-vanilla-enhanced.azalea_door": "Azalea Door",
+  "block.xenon863s-vanilla-enhanced.azalea_trapdoor": "Azalea Trapdoor",
+  "block.xenon863s-vanilla-enhanced.azalea_pressure_plate": "Azalea Pressure Plate",
+  "block.xenon863s-vanilla-enhanced.azalea_button": "Azalea Button"
 }

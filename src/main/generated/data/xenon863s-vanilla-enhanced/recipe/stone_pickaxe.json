@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "T": {
+      "item": "xenon863s-vanilla-enhanced:thick_stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " T ",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stone_pickaxe"
+  }
+}
