@@ -17,6 +17,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.ANDESITE_BRONZE_SWORD);
+
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.AZALEA_PLANKS.asItem());
 

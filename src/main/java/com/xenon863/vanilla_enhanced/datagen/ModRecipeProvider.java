@@ -123,6 +123,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.AZALEA_PLANKS), conditionsFromItem(ModBlocks.AZALEA_PLANKS))
                 .offerTo(recipeExporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANIUM_INGOT, 9)
+                .input(ModBlocks.BLOCK_OF_TITANIUM)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_TITANIUM), conditionsFromItem(ModBlocks.BLOCK_OF_TITANIUM))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_TITANIUM)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.TITANIUM_INGOT)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ANDESITE_BRONZE_INGOT)
                 .pattern("CAC")
                 .pattern("ACA")
@@ -147,17 +159,53 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('G', Blocks.GRANITE)
                 .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_INGOT)
-                .pattern("AID")
-                .pattern("ICI")
-                .pattern("GIT")
-                .input('I', Items.IRON_INGOT)
-                .input('C', Items.COAL)
-                .input('A', Blocks.ANDESITE)
-                .input('D', Blocks.DIORITE)
-                .input('G', Blocks.GRANITE)
-                .input('T', Blocks.TUFF)
-                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ANDESITE_BRONZE_INGOT, 9)
+                .input(ModBlocks.BLOCK_OF_ANDESITE_BRONZE)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_ANDESITE_BRONZE),conditionsFromItem(ModBlocks.BLOCK_OF_ANDESITE_BRONZE))
+                .offerTo(recipeExporter, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "andesite_bronze_ingot_from_block_of_andesite_bronze"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_ANDESITE_BRONZE)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIORITE_BRONZE_INGOT, 9)
+                .input(ModBlocks.BLOCK_OF_DIORITE_BRONZE)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_DIORITE_BRONZE),conditionsFromItem(ModBlocks.BLOCK_OF_DIORITE_BRONZE))
+                .offerTo(recipeExporter, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "diorite_bronze_ingot_from_block_of_diorite_bronze"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_DIORITE_BRONZE)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GRANITE_BRONZE_INGOT, 9)
+                .input(ModBlocks.BLOCK_OF_GRANITE_BRONZE)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_GRANITE_BRONZE),conditionsFromItem(ModBlocks.BLOCK_OF_GRANITE_BRONZE))
+                .offerTo(recipeExporter, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "granite_bronze_ingot_from_block_of_granite_bronze"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_GRANITE_BRONZE)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 9)
+                .input(ModBlocks.BLOCK_OF_TUNGSTEN)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_TUNGSTEN), conditionsFromItem(ModBlocks.BLOCK_OF_TUNGSTEN))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_TUNGSTEN)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
                 .offerTo(recipeExporter);
     }
 }

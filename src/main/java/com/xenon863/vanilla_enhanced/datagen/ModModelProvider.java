@@ -30,6 +30,13 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.AZALEA_TRAPDOOR);
         azaleaPlanks.pressurePlate(ModBlocks.AZALEA_PRESSURE_PLATE);
         azaleaPlanks.button(ModBlocks.AZALEA_BUTTON);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_TITANIUM);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_ANDESITE_BRONZE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_TUNGSTEN);
     }
 
     @Override
@@ -40,9 +47,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MUD_BALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.THICK_STICK, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.TITANIUM_INGOT, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.ANDESITE_BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIORITE_BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRANITE_BRONZE_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TUNGSTEN_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ANDESITE_BRONZE_SWORD, Models.HANDHELD);
     }
 }

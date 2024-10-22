@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iron_ingot": {
+    "has_diorite_bronze_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_ingot"
+            "items": "xenon863s-vanilla-enhanced:diorite_bronze_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "xenon863s-vanilla-enhanced:steel_ingot"
+        "recipe": "xenon863s-vanilla-enhanced:block_of_diorite_bronze"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_iron_ingot"
+      "has_diorite_bronze_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "xenon863s-vanilla-enhanced:steel_ingot"
+      "xenon863s-vanilla-enhanced:block_of_diorite_bronze"
     ]
   }
 }

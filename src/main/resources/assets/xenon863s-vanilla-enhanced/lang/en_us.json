@@ -18,5 +18,18 @@
   "block.xenon863s-vanilla-enhanced.azalea_door": "Azalea Door",
   "block.xenon863s-vanilla-enhanced.azalea_trapdoor": "Azalea Trapdoor",
   "block.xenon863s-vanilla-enhanced.azalea_pressure_plate": "Azalea Pressure Plate",
-  "block.xenon863s-vanilla-enhanced.azalea_button": "Azalea Button"
+  "block.xenon863s-vanilla-enhanced.azalea_button": "Azalea Button",
+
+  "item.xenon863s-vanilla-enhanced.titanium_ingot": "Titanium Ingot",
+  "block.xenon863s-vanilla-enhanced.block_of_titanium": "Block of Titanium",
+
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_ingot": "Andesite Bronze Ingot",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_ingot": "Diorite Bronze Ingot",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_ingot": "Granite Bronze Ingot",
+  "item.xenon863s-vanilla-enhanced.tungsten_ingot": "Tungsten Ingot",
+
+  "block.xenon863s-vanilla-enhanced.block_of_andesite_bronze": "Block of Andesite Bronze",
+  "block.xenon863s-vanilla-enhanced.block_of_diorite_bronze": "Block of Diorite Bronze",
+  "block.xenon863s-vanilla-enhanced.block_of_granite_bronze": "Block of Granite Bronze",
+  "Block.xenon863s-vanilla-enhanced.block_of_tungsten": "Block of Tungsten"
 }

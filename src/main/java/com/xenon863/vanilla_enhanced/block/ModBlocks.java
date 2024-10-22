@@ -13,8 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block TERMITARY = registerBlock("termitary", new Block(AbstractBlock.Settings.create()
-            .strength(2f).sounds(BlockSoundGroup.ROOTED_DIRT)));
+    public static final Block TERMITARY = registerBlock("termitary", new Block(AbstractBlock.Settings.create().strength(2f).sounds(BlockSoundGroup.ROOTED_DIRT)));
 
 
     public static final Block AZALEA_LOG = registerBlock("azalea_log", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));
@@ -30,6 +29,13 @@ public class ModBlocks {
     public static final Block AZALEA_TRAPDOOR = registerBlock("azalea_trapdoor", new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(3f).burnable()));
     public static final Block AZALEA_PRESSURE_PLATE = registerBlock("azalea_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(0.5f).burnable()));
     public static final Block AZALEA_BUTTON = registerBlock("azalea_button", new ButtonBlock(BlockSetType.OAK, 15, AbstractBlock.Settings.create().noCollision().strength(0.5f).burnable()));
+
+    public static final Block BLOCK_OF_TITANIUM = registerBlock("block_of_titanium", new Block(AbstractBlock.Settings.create().strength(6).requiresTool().sounds(BlockSoundGroup.METAL)));
+
+    public static final Block BLOCK_OF_ANDESITE_BRONZE = registerBlock("block_of_andesite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block BLOCK_OF_DIORITE_BRONZE = registerBlock("block_of_diorite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block BLOCK_OF_GRANITE_BRONZE = registerBlock("block_of_granite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block BLOCK_OF_TUNGSTEN = registerBlock("block_of_tungsten", new Block(AbstractBlock.Settings.create().strength(10).requiresTool().sounds(BlockSoundGroup.METAL)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -56,6 +62,13 @@ public class ModBlocks {
            entries.add(ModBlocks.AZALEA_TRAPDOOR);
            entries.add(ModBlocks.AZALEA_PRESSURE_PLATE);
            entries.add(ModBlocks.AZALEA_BUTTON);
+
+           entries.add(ModBlocks.BLOCK_OF_TITANIUM);
+
+           entries.add(ModBlocks.BLOCK_OF_ANDESITE_BRONZE);
+           entries.add(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
+           entries.add(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
+           entries.add(ModBlocks.BLOCK_OF_TUNGSTEN);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries ->{

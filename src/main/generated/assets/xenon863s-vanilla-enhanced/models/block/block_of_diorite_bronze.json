@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "xenon863s-vanilla-enhanced:block/block_of_diorite_bronze"
+  }
+}
