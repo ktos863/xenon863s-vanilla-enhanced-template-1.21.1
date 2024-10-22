@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond": {
+    "has_copper_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diamond"
+            "items": "minecraft:copper_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:diamond_hoe"
+        "recipe": "xenon863s-vanilla-enhanced:diorite_bronze_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diamond"
+      "has_copper_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:diamond_hoe"
+      "xenon863s-vanilla-enhanced:diorite_bronze_ingot"
     ]
   }
 }

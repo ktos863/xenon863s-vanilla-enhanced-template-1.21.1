@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobblestone": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:cobblestone"
+            "items": "minecraft:iron_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:stone_shovel"
+        "recipe": "xenon863s-vanilla-enhanced:steel_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cobblestone"
+      "has_iron_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stone_shovel"
+      "xenon863s-vanilla-enhanced:steel_ingot"
     ]
   }
 }

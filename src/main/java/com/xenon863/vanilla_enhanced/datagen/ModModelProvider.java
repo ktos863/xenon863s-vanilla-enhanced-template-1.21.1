@@ -17,10 +17,10 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TERMITARY);
 
-        //blockStateModelGenerator.registerLog(ModBlocks.AZALEA_LOG).log(ModBlocks.AZALEA_LOG).wood(ModBlocks.AZALEA_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AZALEA_WOOD);
-        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AZALEA_LOG).log(ModBlocks.STRIPPED_AZALEA_LOG).wood(ModBlocks.STRIPPED_AZALEA_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRIPPED_AZALEA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.AZALEA_LOG).log(ModBlocks.AZALEA_LOG).wood(ModBlocks.AZALEA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.AZALEA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AZALEA_LOG).log(ModBlocks.STRIPPED_AZALEA_LOG).wood(ModBlocks.STRIPPED_AZALEA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AZALEA_WOOD);
         BlockStateModelGenerator.BlockTexturePool azaleaPlanks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.AZALEA_PLANKS);
         azaleaPlanks.stairs(ModBlocks.AZALEA_STAIRS);
         azaleaPlanks.slab(ModBlocks.AZALEA_SLAB);
@@ -39,5 +39,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MUD_BALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.THICK_STICK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ANDESITE_BRONZE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIORITE_BRONZE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRANITE_BRONZE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
     }
 }

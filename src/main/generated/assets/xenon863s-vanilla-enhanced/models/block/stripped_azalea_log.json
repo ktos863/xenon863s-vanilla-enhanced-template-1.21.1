@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "xenon863s-vanilla-enhanced:block/stripped_azalea_log",
+    "end": "xenon863s-vanilla-enhanced:block/stripped_azalea_log_top",
     "side": "xenon863s-vanilla-enhanced:block/stripped_azalea_log"
   }
 }

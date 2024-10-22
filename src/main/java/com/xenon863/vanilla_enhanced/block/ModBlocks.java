@@ -18,9 +18,9 @@ public class ModBlocks {
 
 
     public static final Block AZALEA_LOG = registerBlock("azalea_log", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));
-    public static final Block AZALEA_WOOD = registerBlock("azalea_wood", new Block(AbstractBlock.Settings.create().strength(2f).burnable()));
+    public static final Block AZALEA_WOOD = registerBlock("azalea_wood", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));
     public static final Block STRIPPED_AZALEA_LOG = registerBlock("stripped_azalea_log", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));
-    public static final Block STRIPPED_AZALEA_WOOD = registerBlock("stripped_azalea_wood", new Block(AbstractBlock.Settings.create().strength(2f).burnable()));
+    public static final Block STRIPPED_AZALEA_WOOD = registerBlock("stripped_azalea_wood", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));
     public static final Block AZALEA_PLANKS = registerBlock("azalea_planks", new Block(AbstractBlock.Settings.create().strength(2f).burnable()));
     public static final Block AZALEA_STAIRS = registerBlock("azalea_stairs", new StairsBlock(ModBlocks.AZALEA_PLANKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f).burnable()));
     public static final Block AZALEA_SLAB = registerBlock("azalea_slab", new SlabBlock(AbstractBlock.Settings.create().strength(2f).burnable()));

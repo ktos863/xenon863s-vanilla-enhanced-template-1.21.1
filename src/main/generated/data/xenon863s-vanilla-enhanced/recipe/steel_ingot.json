@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:andesite"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "D": {
+      "item": "minecraft:diorite"
+    },
+    "G": {
+      "item": "minecraft:granite"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "T": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "pattern": [
+    "AID",
+    "ICI",
+    "GIT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:steel_ingot"
+  }
+}

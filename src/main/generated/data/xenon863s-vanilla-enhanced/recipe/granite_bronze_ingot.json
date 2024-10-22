@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "G": {
+      "item": "minecraft:granite"
+    }
+  },
+  "pattern": [
+    "CGC",
+    "GCG",
+    "CGC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:granite_bronze_ingot"
+  }
+}
