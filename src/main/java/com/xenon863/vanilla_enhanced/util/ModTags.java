@@ -14,13 +14,13 @@ public class ModTags {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, name));
         }
 
+        public static final TagKey<Block> NEEDS_TITANIUM_TOOL = createTag("needs_titanium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = createTag("incorrect_for_titanium_tools");
+
         public static final TagKey<Block> INCORRECT_FOR_ANDESITE_BRONZE_TOOL = createTag("incorrect_for_andesite_bronze_tool");
         public static final TagKey<Block> INCORRECT_FOR_DIORITE_BRONZE_TOOL = createTag("incorrect_for_diorite_bronze_tool");
         public static final TagKey<Block> INCORRECT_FOR_GRANITE_BRONZE_TOOL = createTag("incorrect_for_granite_bronze_tool");
         public static final TagKey<Block> INCORRECT_FOR_TUNGSTEN_TOOL = createTag("incorrect_for_tungsten_tool");
-
-        public static final TagKey<Block> NEEDS_TITANIUM_TOOL = createTag("needs_titanium_tool");
-        public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = createTag("incorrect_for_titanium_tools");
     }
 
     public static class Items{

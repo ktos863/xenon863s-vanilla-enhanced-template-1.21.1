@@ -23,16 +23,16 @@ public class ModItems {
     public static final Item GRANITE_BRONZE_INGOT = registerItem("granite_bronze_ingot", new Item(new Item.Settings()));
     public static final Item TUNGSTEN_INGOT = registerItem("tungsten_ingot", new Item(new Item.Settings().fireproof()));
 
-    public static final Item ANDESITE_BRONZE_SWORD = registerItem("andesite_bronze_sword", new SwordItem(ModToolMaterials.modToolMaterials
-            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 3, -2.4F))));
-    public static final Item ANDESITE_BRONZE_PICKAXE = registerItem("andesite_bronze_pickaxe", new PickaxeItem(ModToolMaterials.modToolMaterials
-            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 1, -2.8F))));
-    public static final Item ANDESITE_BRONZE_AXE = registerItem("andesite_bronze_axe", new AxeItem(ModToolMaterials.modToolMaterials
-            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 6, -3.2F))));
-    public static final Item ANDESITE_BRONZE_SHOVEL = registerItem("andesite_bronze_shovel", new ShovelItem(ModToolMaterials.modToolMaterials
-            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 1.5F, -3F))));
-    public static final Item ANDESITE_BRONZE_HOE = registerItem("andesite_bronze_hoe", new HoeItem(ModToolMaterials.modToolMaterials
-            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 0, -3F))));
+    public static final Item ANDESITE_BRONZE_SWORD = registerItem("andesite_bronze_sword", new SwordItem(ModToolMaterials.ANDESITE_BRONZE
+            , new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ANDESITE_BRONZE, 3, -2.4F))));
+    public static final Item ANDESITE_BRONZE_PICKAXE = registerItem("andesite_bronze_pickaxe", new PickaxeItem(ModToolMaterials.ANDESITE_BRONZE
+            , new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ANDESITE_BRONZE, 1, -2.8F))));
+    public static final Item ANDESITE_BRONZE_AXE = registerItem("andesite_bronze_axe", new AxeItem(ModToolMaterials.ANDESITE_BRONZE
+            , new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ANDESITE_BRONZE, 6, -3.2F))));
+    public static final Item ANDESITE_BRONZE_SHOVEL = registerItem("andesite_bronze_shovel", new ShovelItem(ModToolMaterials.ANDESITE_BRONZE
+            , new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ANDESITE_BRONZE, 1.5F, -3F))));
+    public static final Item ANDESITE_BRONZE_HOE = registerItem("andesite_bronze_hoe", new HoeItem(ModToolMaterials.ANDESITE_BRONZE
+            , new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ANDESITE_BRONZE, 0, -3F))));
 
 
     public static Item registerItem(String name, Item item){
