@@ -19,6 +19,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.ANDESITE_BRONZE_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.ANDESITE_BRONZE_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.ANDESITE_BRONZE_AXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.ANDESITE_BRONZE_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.ANDESITE_BRONZE_HOE);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.AZALEA_PLANKS.asItem());

@@ -2,9 +2,7 @@ package com.xenon863.vanilla_enhanced.item;
 
 import com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhanced;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -27,6 +25,15 @@ public class ModItems {
 
     public static final Item ANDESITE_BRONZE_SWORD = registerItem("andesite_bronze_sword", new SwordItem(ModToolMaterials.modToolMaterials
             .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 3, -2.4F))));
+    public static final Item ANDESITE_BRONZE_PICKAXE = registerItem("andesite_bronze_pickaxe", new PickaxeItem(ModToolMaterials.modToolMaterials
+            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 1, -2.8F))));
+    public static final Item ANDESITE_BRONZE_AXE = registerItem("andesite_bronze_axe", new AxeItem(ModToolMaterials.modToolMaterials
+            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 6, -3.2F))));
+    public static final Item ANDESITE_BRONZE_SHOVEL = registerItem("andesite_bronze_shovel", new ShovelItem(ModToolMaterials.modToolMaterials
+            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 1.5F, -3F))));
+    public static final Item ANDESITE_BRONZE_HOE = registerItem("andesite_bronze_hoe", new HoeItem(ModToolMaterials.modToolMaterials
+            .ANDESITE_BRONZE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.modToolMaterials.ANDESITE_BRONZE, 0, -3F))));
+
 
     public static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, name), item);
@@ -50,6 +57,12 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries ->{
            entries.add(ModItems.ANDESITE_BRONZE_SWORD);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries ->{
+           entries.add(ModItems.ANDESITE_BRONZE_PICKAXE);
+           entries.add(ModItems.ANDESITE_BRONZE_AXE);
+           entries.add(ModItems.ANDESITE_BRONZE_SHOVEL);
+           entries.add(ModItems.ANDESITE_BRONZE_HOE);
         });
     }
 }
