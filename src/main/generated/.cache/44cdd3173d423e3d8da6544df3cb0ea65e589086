@@ -1,18 +1,18 @@
-// 1.21.1	2024-10-23T09:26:52.0310173	Xenon863's Vanilla Enhanced/Tags for minecraft:item
+// 1.21.1	2024-10-24T15:31:13.3699326	Xenon863's Vanilla Enhanced/Tags for minecraft:item
 dbb6246e15be17cf7b041c11a618f52841f32ca7 data\minecraft\tags\item\planks.json
 b2e15302fc1756fb2b562bcafea66e98b533ba6d data\minecraft\tags\item\wooden_stairs.json
 ce84f86f649c1ded267fe9d0457a0238e3e5f188 data\minecraft\tags\item\wooden_trapdoors.json
-39f96004ec5a77fdafaf5ff3947c0695f9852b6f data\minecraft\tags\item\hoes.json
+e7c2718321293a1ebbc5753ce8b4c4cc0f63fcc6 data\minecraft\tags\item\hoes.json
 45d7bbcffd57a6fcfdf8175db86254e609e597a0 data\minecraft\tags\item\fence_gates.json
 7f07fb183851971a95c1571c2955421183b42f70 data\minecraft\tags\item\wooden_buttons.json
-fd3173b619bb5167c077b5c95c9c11632e0ae6c0 data\minecraft\tags\item\axes.json
+323ff265f1bdf12579e166df3a7ae0e50fc0bd0e data\minecraft\tags\item\axes.json
 543c36a9c9e5bf79111bfbdc936628345a4fe031 data\xenon863s-vanilla-enhanced\tags\item\azalea_logs.json
-03f89cd9b3d8398d6bc770ad32965b6f601c8219 data\minecraft\tags\item\pickaxes.json
+46b8df30fb0a22449206251e11a5d3dbb728cd3d data\minecraft\tags\item\pickaxes.json
 543c36a9c9e5bf79111bfbdc936628345a4fe031 data\minecraft\tags\item\logs_that_burn.json
-5b5621df6a8a599253568aec0664f3ecdea02d72 data\minecraft\tags\item\swords.json
+43ee8df1d936432e6b6057dae260ce2ac29901fc data\minecraft\tags\item\swords.json
 2bf898960d981623395af96b7b50937dbaff6cbb data\minecraft\tags\item\wooden_slabs.json
 95dd7e90756614261378a557d1ad3b6d69b3abab data\minecraft\tags\item\wooden_doors.json
 12cf463117227fcfbe27e47180f28e3ce9baad75 data\minecraft\tags\item\wooden_fences.json
-896c576a38cad8f65f3b3004862806fb3b185688 data\minecraft\tags\item\shovels.json
+0015b6c4dd8d9f79edece32b9444a38ee1fd9bb6 data\minecraft\tags\item\shovels.json
 38d4e35a2d529599a6fb7f9bad95423051e48f70 data\minecraft\tags\item\wooden_pressure_plates.json
 543c36a9c9e5bf79111bfbdc936628345a4fe031 data\minecraft\tags\item\logs.json

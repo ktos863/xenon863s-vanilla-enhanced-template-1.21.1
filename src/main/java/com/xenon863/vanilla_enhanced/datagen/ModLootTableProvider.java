@@ -45,8 +45,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AZALEA_PRESSURE_PLATE);
         addDrop(ModBlocks.AZALEA_BUTTON);
 
-        addDrop(ModBlocks.BLOCK_OF_TITANIUM);
-
         addDrop(ModBlocks.BLOCK_OF_ANDESITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_GRANITE_BRONZE);

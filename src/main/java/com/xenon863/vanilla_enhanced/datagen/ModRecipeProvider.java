@@ -1,6 +1,5 @@
 package com.xenon863.vanilla_enhanced.datagen;
 
-import com.mojang.datafixers.types.templates.Tag;
 import com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhanced;
 import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import com.xenon863.vanilla_enhanced.item.ModItems;
@@ -12,10 +11,8 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
@@ -123,16 +120,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.AZALEA_PLANKS), conditionsFromItem(ModBlocks.AZALEA_PLANKS))
                 .offerTo(recipeExporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANIUM_INGOT, 9)
-                .input(ModBlocks.BLOCK_OF_TITANIUM)
-                .criterion(hasItem(ModBlocks.BLOCK_OF_TITANIUM), conditionsFromItem(ModBlocks.BLOCK_OF_TITANIUM))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_HELMET)
+                .pattern("NNN")
+                .pattern("N N")
+                .input('N', Items.IRON_NUGGET)
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
                 .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_TITANIUM)
-                .pattern("III")
-                .pattern("III")
-                .pattern("III")
-                .input('I', ModItems.TITANIUM_INGOT)
-                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_CHESTPLATE)
+                .pattern("N N")
+                .pattern("NNN")
+                .pattern("NNN")
+                .input('N', Items.IRON_NUGGET)
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_LEGGINGS)
+                .pattern("NNN")
+                .pattern("N N")
+                .pattern("N N")
+                .input('N', Items.IRON_NUGGET)
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, Items.CHAINMAIL_BOOTS)
+                .pattern("N N")
+                .pattern("N N")
+                .input('N', Items.IRON_NUGGET)
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ANDESITE_BRONZE_INGOT)
@@ -205,6 +217,170 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("III")
                 .pattern("III")
                 .input('I', ModItems.TUNGSTEN_INGOT)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ANDESITE_BRONZE_SWORD)
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ANDESITE_BRONZE_PICKAXE)
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ANDESITE_BRONZE_AXE)
+                .pattern("II")
+                .pattern("IS")
+                .pattern(" S")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ANDESITE_BRONZE_SHOVEL)
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ANDESITE_BRONZE_HOE)
+                .pattern("II")
+                .pattern(" S")
+                .pattern(" S")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIORITE_BRONZE_SWORD)
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIORITE_BRONZE_PICKAXE)
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIORITE_BRONZE_AXE)
+                .pattern("II")
+                .pattern("IS")
+                .pattern(" S")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIORITE_BRONZE_SHOVEL)
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIORITE_BRONZE_HOE)
+                .pattern("II")
+                .pattern(" S")
+                .pattern(" S")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GRANITE_BRONZE_SWORD)
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GRANITE_BRONZE_PICKAXE)
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GRANITE_BRONZE_AXE)
+                .pattern("II")
+                .pattern("IS")
+                .pattern(" S")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GRANITE_BRONZE_SHOVEL)
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GRANITE_BRONZE_HOE)
+                .pattern("II")
+                .pattern(" S")
+                .pattern(" S")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TUNGSTEN_SWORD)
+                .pattern("I")
+                .pattern("I")
+                .pattern("S")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TUNGSTEN_PICKAXE)
+                .pattern("III")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TUNGSTEN_AXE)
+                .pattern("II")
+                .pattern("IS")
+                .pattern(" S")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TUNGSTEN_SHOVEL)
+                .pattern("I")
+                .pattern("S")
+                .pattern("S")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TUNGSTEN_HOE)
+                .pattern("II")
+                .pattern(" S")
+                .pattern(" S")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .input('S', ModItems.THICK_STICK)
                 .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
                 .offerTo(recipeExporter);
     }

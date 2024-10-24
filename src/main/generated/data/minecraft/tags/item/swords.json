@@ -1,5 +1,8 @@
 {
   "values": [
-    "xenon863s-vanilla-enhanced:andesite_bronze_sword"
+    "xenon863s-vanilla-enhanced:andesite_bronze_sword",
+    "xenon863s-vanilla-enhanced:diorite_bronze_sword",
+    "xenon863s-vanilla-enhanced:granite_bronze_sword",
+    "xenon863s-vanilla-enhanced:tungsten_sword"
   ]
 }

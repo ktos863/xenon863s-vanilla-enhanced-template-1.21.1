@@ -18,15 +18,30 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.ANDESITE_BRONZE_SWORD);
+                .add(ModItems.ANDESITE_BRONZE_SWORD)
+                .add(ModItems.DIORITE_BRONZE_SWORD)
+                .add(ModItems.GRANITE_BRONZE_SWORD)
+                .add(ModItems.TUNGSTEN_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.ANDESITE_BRONZE_PICKAXE);
+                .add(ModItems.ANDESITE_BRONZE_PICKAXE)
+                .add(ModItems.DIORITE_BRONZE_PICKAXE)
+                .add(ModItems.GRANITE_BRONZE_PICKAXE)
+                .add(ModItems.TUNGSTEN_PICKAXE);
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.ANDESITE_BRONZE_AXE);
+                .add(ModItems.ANDESITE_BRONZE_AXE)
+                .add(ModItems.DIORITE_BRONZE_AXE)
+                .add(ModItems.GRANITE_BRONZE_AXE)
+                .add(ModItems.TUNGSTEN_AXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.ANDESITE_BRONZE_SHOVEL);
+                .add(ModItems.ANDESITE_BRONZE_SHOVEL)
+                .add(ModItems.DIORITE_BRONZE_SHOVEL)
+                .add(ModItems.GRANITE_BRONZE_SHOVEL)
+                .add(ModItems.TUNGSTEN_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.ANDESITE_BRONZE_HOE);
+                .add(ModItems.ANDESITE_BRONZE_HOE)
+                .add(ModItems.DIORITE_BRONZE_HOE)
+                .add(ModItems.GRANITE_BRONZE_HOE)
+                .add(ModItems.TUNGSTEN_HOE);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.AZALEA_PLANKS.asItem());

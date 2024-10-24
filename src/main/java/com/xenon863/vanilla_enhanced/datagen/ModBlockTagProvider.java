@@ -17,7 +17,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.BLOCK_OF_TITANIUM)
                 .add(ModBlocks.BLOCK_OF_ANDESITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_DIORITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_GRANITE_BRONZE)
@@ -47,9 +46,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.BLOCK_OF_TITANIUM);
-
-        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_TITANIUM_TOOL)
                 .add(ModBlocks.BLOCK_OF_TUNGSTEN);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)

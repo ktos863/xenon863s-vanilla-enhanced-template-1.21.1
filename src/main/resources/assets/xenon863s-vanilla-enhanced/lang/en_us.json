@@ -20,9 +20,6 @@
   "block.xenon863s-vanilla-enhanced.azalea_pressure_plate": "Azalea Pressure Plate",
   "block.xenon863s-vanilla-enhanced.azalea_button": "Azalea Button",
 
-  "item.xenon863s-vanilla-enhanced.titanium_ingot": "Titanium Ingot",
-  "block.xenon863s-vanilla-enhanced.block_of_titanium": "Block of Titanium",
-
   "item.xenon863s-vanilla-enhanced.andesite_bronze_ingot": "Andesite Bronze Ingot",
   "item.xenon863s-vanilla-enhanced.diorite_bronze_ingot": "Diorite Bronze Ingot",
   "item.xenon863s-vanilla-enhanced.granite_bronze_ingot": "Granite Bronze Ingot",
@@ -31,5 +28,41 @@
   "block.xenon863s-vanilla-enhanced.block_of_andesite_bronze": "Block of Andesite Bronze",
   "block.xenon863s-vanilla-enhanced.block_of_diorite_bronze": "Block of Diorite Bronze",
   "block.xenon863s-vanilla-enhanced.block_of_granite_bronze": "Block of Granite Bronze",
-  "Block.xenon863s-vanilla-enhanced.block_of_tungsten": "Block of Tungsten"
+  "block.xenon863s-vanilla-enhanced.block_of_tungsten": "Block of Tungsten",
+
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_sword": "Andesite Bronze Sword",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_pickaxe": "Andesite Bronze Pickaxe",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_axe": "Andesite Bronze Axe",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_shovel": "Andesite Bronze Shovel",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_helmet": "Andesite Bronze Helmet",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_chestplate": "Andesite Bronze Chestplate",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_leggings": "Andesite Bronze Leggings",
+  "item.xenon863s-vanilla-enhanced.andesite_bronze_boots": "Andesite Bronze Boots",
+
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_sword": "Diorite Bronze Sword",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_pickaxe": "Diorite Bronze Pickaxe",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_axe": "Diorite Bronze Axe",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_shovel": "Diorite Bronze Shovel",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_helmet": "Diorite Bronze Helmet",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_chestplate": "Diorite Bronze Chestplate",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_leggings": "Diorite Bronze Leggings",
+  "item.xenon863s-vanilla-enhanced.diorite_bronze_boots": "Diorite Bronze Boots",
+
+  "item.xenon863s-vanilla-enhanced.granite_bronze_sword": "Granite Bronze Sword",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_pickaxe": "Granite Bronze Pickaxe",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_axe": "Granite Bronze Axe",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_shovel": "Granite Bronze Shovel",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_helmet": "Granite Bronze Helmet",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_chestplate": "Granite Bronze Chestplate",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_leggings": "Granite Bronze Leggings",
+  "item.xenon863s-vanilla-enhanced.granite_bronze_boots": "Granite Bronze Boots",
+
+  "item.xenon863s-vanilla-enhanced.tungsten_sword": "Tungsten Sword",
+  "item.xenon863s-vanilla-enhanced.tungsten_pickaxe": "Tungsten Pickaxe",
+  "item.xenon863s-vanilla-enhanced.tungsten_axe": "Tungsten Axe",
+  "item.xenon863s-vanilla-enhanced.tungsten_shovel": "Tungsten Shovel",
+  "item.xenon863s-vanilla-enhanced.tungsten_helmet": "Tungsten Helmet",
+  "item.xenon863s-vanilla-enhanced.tungsten_chestplate": "Tungsten Chestplate",
+  "item.xenon863s-vanilla-enhanced.tungsten_leggings": "Tungsten Leggings",
+  "item.xenon863s-vanilla-enhanced.tungsten_boots": "Tungsten Boots"
 }
