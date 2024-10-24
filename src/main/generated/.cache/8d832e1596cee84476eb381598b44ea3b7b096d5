@@ -1,10 +1,10 @@
-// 1.21.1	2024-10-24T15:31:13.3669337	Xenon863's Vanilla Enhanced/Tags for minecraft:block
+// 1.21.1	2024-10-24T16:02:50.3180215	Xenon863's Vanilla Enhanced/Tags for minecraft:block
 b2e15302fc1756fb2b562bcafea66e98b533ba6d data\minecraft\tags\block\wooden_stairs.json
 ea16cbdebc5736c7504300d9a6e850e568e2a791 data\minecraft\tags\block\logs.json
 2bf898960d981623395af96b7b50937dbaff6cbb data\minecraft\tags\block\wooden_slabs.json
 ce84f86f649c1ded267fe9d0457a0238e3e5f188 data\minecraft\tags\block\wooden_trapdoors.json
-8fea77a2fdcd83d4edc5448b86bcaa4bfa175d3a data\minecraft\tags\block\needs_iron_tool.json
 ea16cbdebc5736c7504300d9a6e850e568e2a791 data\minecraft\tags\block\logs_that_burn.json
+8fea77a2fdcd83d4edc5448b86bcaa4bfa175d3a data\minecraft\tags\block\needs_iron_tool.json
 e56a2984533f96a4a390c8729cbc9519d848eeb4 data\minecraft\tags\block\needs_stone_tool.json
 1c17ecdaeb1393e6b2b7380028ef9c404808c1a6 data\minecraft\tags\block\mineable\shovel.json
 3ca391fe784dc52bf6060b0320ad94c6da95975e data\minecraft\tags\block\mineable\pickaxe.json
