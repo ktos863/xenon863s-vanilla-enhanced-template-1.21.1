@@ -4,6 +4,8 @@ import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+
+import net.minecraft.item.ToolMaterials;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,5 +18,7 @@ public class Xenon863sVanillaEnhanced implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+
 	}
 }

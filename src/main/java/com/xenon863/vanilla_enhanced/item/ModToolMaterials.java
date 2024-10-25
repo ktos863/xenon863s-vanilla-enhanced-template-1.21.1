@@ -10,10 +10,10 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    ANDESITE_BRONZE(ModTags.Blocks.INCORRECT_FOR_ANDESITE_BRONZE_TOOL, 128, 3.6F, 1.0F, 25, () -> Ingredient.ofItems(ModItems.ANDESITE_BRONZE_INGOT)),
-    DIORITE_BRONZE(ModTags.Blocks.INCORRECT_FOR_DIORITE_BRONZE_TOOL, 256, 3.6F, 1.0F, 10, () -> Ingredient.ofItems(ModItems.DIORITE_BRONZE_INGOT)),
-    GRANITE_BRONZE(ModTags.Blocks.INCORRECT_FOR_GRANITE_BRONZE_TOOL, 128, 5.4F, 2.0F, 10, () -> Ingredient.ofItems(ModItems.GRANITE_BRONZE_INGOT)),
-    TUNGSTEN(ModTags.Blocks.INCORRECT_FOR_TUNGSTEN_TOOL, 1024, 9.0F, 4.0F, 5, () -> Ingredient.ofItems(ModItems.TUNGSTEN_INGOT));
+    ANDESITE_BRONZE(ModTags.Blocks.INCORRECT_FOR_ANDESITE_BRONZE_TOOL, 256, 3.6F, 1.0F, 22, () -> Ingredient.ofItems(ModItems.ANDESITE_BRONZE_INGOT)),
+    DIORITE_BRONZE(ModTags.Blocks.INCORRECT_FOR_DIORITE_BRONZE_TOOL, 512, 3.6F, 1.0F, 10, () -> Ingredient.ofItems(ModItems.DIORITE_BRONZE_INGOT)),
+    GRANITE_BRONZE(ModTags.Blocks.INCORRECT_FOR_GRANITE_BRONZE_TOOL, 256, 5.4F, 2.0F, 10, () -> Ingredient.ofItems(ModItems.GRANITE_BRONZE_INGOT)),
+    TUNGSTEN(ModTags.Blocks.INCORRECT_FOR_TUNGSTEN_TOOL, 2048, 9.0F, 4.0F, 10, () -> Ingredient.ofItems(ModItems.TUNGSTEN_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

@@ -11,7 +11,11 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
@@ -260,6 +264,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', ModItems.THICK_STICK)
                 .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ANDESITE_BRONZE_HELMET)
+                .pattern("III")
+                .pattern("I I")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ANDESITE_BRONZE_CHESTPLATE)
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ANDESITE_BRONZE_LEGGINGS)
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ANDESITE_BRONZE_BOOTS)
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.ANDESITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.ANDESITE_BRONZE_INGOT), conditionsFromItem(ModItems.ANDESITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIORITE_BRONZE_SWORD)
                 .pattern("I")
@@ -299,6 +329,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S")
                 .input('I', ModItems.DIORITE_BRONZE_INGOT)
                 .input('S', ModItems.THICK_STICK)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIORITE_BRONZE_HELMET)
+                .pattern("III")
+                .pattern("I I")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIORITE_BRONZE_CHESTPLATE)
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIORITE_BRONZE_LEGGINGS)
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIORITE_BRONZE_BOOTS)
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.DIORITE_BRONZE_INGOT)
                 .criterion(hasItem(ModItems.DIORITE_BRONZE_INGOT), conditionsFromItem(ModItems.DIORITE_BRONZE_INGOT))
                 .offerTo(recipeExporter);
 
@@ -342,6 +398,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', ModItems.THICK_STICK)
                 .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GRANITE_BRONZE_HELMET)
+                .pattern("III")
+                .pattern("I I")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GRANITE_BRONZE_CHESTPLATE)
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GRANITE_BRONZE_LEGGINGS)
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GRANITE_BRONZE_BOOTS)
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.GRANITE_BRONZE_INGOT)
+                .criterion(hasItem(ModItems.GRANITE_BRONZE_INGOT), conditionsFromItem(ModItems.GRANITE_BRONZE_INGOT))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TUNGSTEN_SWORD)
                 .pattern("I")
@@ -383,5 +465,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', ModItems.THICK_STICK)
                 .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TUNGSTEN_HELMET)
+                .pattern("III")
+                .pattern("I I")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TUNGSTEN_CHESTPLATE)
+                .pattern("I I")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TUNGSTEN_LEGGINGS)
+                .pattern("III")
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TUNGSTEN_BOOTS)
+                .pattern("I I")
+                .pattern("I I")
+                .input('I', ModItems.TUNGSTEN_INGOT)
+                .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
+                .offerTo(recipeExporter);
+        }
     }
-}
+
