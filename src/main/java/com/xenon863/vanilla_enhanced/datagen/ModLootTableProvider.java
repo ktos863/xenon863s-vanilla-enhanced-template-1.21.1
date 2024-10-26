@@ -4,10 +4,13 @@ import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.loot.v3.FabricLootTableBuilder;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
@@ -62,6 +65,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                         ((LeafEntry.Builder)this.addSurvivesExplosionCondition(leaves, ItemEntry.builder(ModItems.PEAR)))
                                                 .conditionally(TableBonusLootCondition.builder(impl.getOrThrow(Enchantments.FORTUNE), 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F))
                                 )
+
                 );
+
     }
 }

@@ -18,10 +18,10 @@ public class ArmorEffects {
 
     private static void onPlayerTick(ServerPlayerEntity player) {
         tickCounter++;
-        if(tickCounter >= 80) {
+        if(tickCounter >= 20) {
             isWearingTungstenArmor(player);
             if (numberOfTungstenArmor > 0) {
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 21 * numberOfTungstenArmor, 1, true, true, true));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 21, numberOfTungstenArmor - 1, true, true, true));
             }
             tickCounter = 0;
         }
