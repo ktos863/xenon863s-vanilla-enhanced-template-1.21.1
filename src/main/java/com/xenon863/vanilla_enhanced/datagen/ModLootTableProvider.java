@@ -4,14 +4,11 @@ import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.loot.v3.FabricLootTableBuilder;
-import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.EntityType;
-import net.minecraft.item.Items;
+import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.TableBonusLootCondition;
@@ -32,7 +29,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.TERMITARY);
 
-        addDrop(Blocks.BIRCH_LEAVES, birchLeavesDrops(Blocks.BIRCH_LEAVES, Blocks.BIRCH_SAPLING, 0.05f));
+        addDrop(Blocks.BIRCH_LEAVES, birchLeavesDrops(Blocks.BIRCH_LEAVES, Blocks.BIRCH_SAPLING, ModItems.PEAR, 0.05f));
+        addDrop(Blocks.CHERRY_LEAVES, birchLeavesDrops(Blocks.CHERRY_LEAVES, Blocks.CHERRY_SAPLING, ModItems.CHERRIES, 0.05f));
 
         addDrop(ModBlocks.AZALEA_LOG);
         addDrop(ModBlocks.AZALEA_WOOD);
@@ -54,7 +52,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOCK_OF_TUNGSTEN);
     }
 
-    public LootTable.Builder birchLeavesDrops(Block leaves, Block sapling, float... saplingChance) {
+    public LootTable.Builder birchLeavesDrops(Block leaves, Block sapling, Item fruit, float... saplingChance) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         return this.leavesDrops(leaves, sapling, saplingChance)
                 .pool(
@@ -62,7 +60,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .rolls(ConstantLootNumberProvider.create(1.0F))
                                 .conditionally(this.createWithoutShearsOrSilkTouchCondition())
                                 .with(
-                                        ((LeafEntry.Builder)this.addSurvivesExplosionCondition(leaves, ItemEntry.builder(ModItems.PEAR)))
+                                        ((LeafEntry.Builder)this.addSurvivesExplosionCondition(leaves, ItemEntry.builder(fruit)))
                                                 .conditionally(TableBonusLootCondition.builder(impl.getOrThrow(Enchantments.FORTUNE), 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F))
                                 )
 

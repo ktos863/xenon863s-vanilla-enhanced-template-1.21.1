@@ -1,6 +1,8 @@
 package com.xenon863.vanilla_enhanced.item;
 
 import com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhanced;
+import com.xenon863.vanilla_enhanced.block.ModBlocks;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -12,10 +14,18 @@ public class ModItems {
 
     public static final Item PEAR = registerItem("pear", new Item(new Item.Settings().food(ModFoodComponent.PEAR)));
     public static final Item COPPER_PEAR = registerItem("copper_pear", new Item(new Item.Settings().food(ModFoodComponent.COPPER_PEAR)));
+    public static final Item CHERRIES = registerItem("cherries", new Item(new Item.Settings().food(ModFoodComponent.CHERRIES)));
+    public static final Item AMETHYST_CHERRIES = registerItem("amethyst_cherries", new Item(new Item.Settings().food(ModFoodComponent.AMETHYST_CHERRIES)));
+
+    public static final Item RICE = registerItem("rice", new Item(new Item.Settings().food(ModFoodComponent.RICE)));
+    public static final Item BOWL_OF_RICE = registerItem("bowl_of_rice", new Item(new Item.Settings().food(ModFoodComponent.BOWL_OF_RICE)));
+    public static final Item GOLDEN_RICE = registerItem("golden_rice", new Item(new Item.Settings().food(ModFoodComponent.GOLDEN_RICE)));
+    public static final Item BOWL_OF_GOLDEN_RICE = registerItem("bowl_of_golden_rice", new Item(new Item.Settings().food(ModFoodComponent.BOWL_OF_GOLDEN_RICE)));
+    public static final Item CORN_GRAINS = registerItem("corn_grains", new Item(new Item.Settings().food(ModFoodComponent.CORN_GRAINS)));
+    public static final Item CORN = registerItem("corn", new Item(new Item.Settings().food(ModFoodComponent.CORN)));
 
     public static final Item MUD_BALL = registerItem("mud_ball", new Item(new Item.Settings()));
     public static final Item THICK_STICK = registerItem("thick_stick", new Item(new Item.Settings()));
-
 
     public static final Item ANDESITE_BRONZE_INGOT = registerItem("andesite_bronze_ingot", new Item(new Item.Settings()));
     public static final Item DIORITE_BRONZE_INGOT = registerItem("diorite_bronze_ingot", new Item(new Item.Settings()));
@@ -112,6 +122,14 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
            entries.add(ModItems.PEAR);
            entries.add(ModItems.COPPER_PEAR);
+           entries.add(ModItems.CHERRIES);
+           entries.add(ModItems.AMETHYST_CHERRIES);
+           entries.add(ModItems.RICE);
+           entries.add(ModItems.BOWL_OF_RICE);
+           entries.add(ModItems.GOLDEN_RICE);
+           entries.add(ModItems.BOWL_OF_GOLDEN_RICE);
+           entries.add(ModItems.CORN_GRAINS);
+           entries.add(ModItems.CORN);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
             entries.add(ModItems.MUD_BALL);

@@ -2,7 +2,9 @@ package com.xenon863.vanilla_enhanced.block;
 
 import com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhanced;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,8 +15,11 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block TERMITARY = registerBlock("termitary", new Block(AbstractBlock.Settings.create().strength(2f).sounds(BlockSoundGroup.ROOTED_DIRT)));
+    public static final Block RICE_CROP = Registry.register(Registries.BLOCK,Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "rice_crop"), new UnderwaterCrops(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+    public static final Block GOLDEN_RICE_CROP = Registry.register(Registries.BLOCK, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "golden_rice_crop"), new ModCrops(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "corn_crop"), new TallCrops(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
+    public static final Block TERMITARY = registerBlock("termitary", new Block(AbstractBlock.Settings.create().strength(2f).sounds(BlockSoundGroup.ROOTED_DIRT)));
 
     public static final Block AZALEA_LOG = registerBlock("azalea_log", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));
     public static final Block AZALEA_WOOD = registerBlock("azalea_wood", new PillarBlock(AbstractBlock.Settings.create().strength(2f).burnable()));

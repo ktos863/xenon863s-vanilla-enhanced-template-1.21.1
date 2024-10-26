@@ -17,4 +17,43 @@ public class ModFoodComponent {
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400), 1f)
             .alwaysEdible()
             .build();
+    public static final FoodComponent CHERRIES = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.3f)
+            .build();
+    public static final FoodComponent AMETHYST_CHERRIES = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.6f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 200, 2), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200), 1f)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodComponent RICE = new FoodComponent.Builder()
+            .nutrition(1)
+            .saturationModifier(0.6f)
+            .build();
+    public static final FoodComponent BOWL_OF_RICE = new FoodComponent.Builder()
+            .nutrition(8)
+            .saturationModifier(0.6f)
+            .build();
+    public static final FoodComponent GOLDEN_RICE = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.6f)
+            .alwaysEdible()
+            .build();
+    public static final FoodComponent BOWL_OF_GOLDEN_RICE = new FoodComponent.Builder()
+            .nutrition(16)
+            .saturationModifier(0.6f)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodComponent CORN_GRAINS = new FoodComponent.Builder()
+            .nutrition(1)
+            .saturationModifier(0.6f)
+            .build();
+    public static final FoodComponent CORN = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(0.6f)
+            .build();
 }

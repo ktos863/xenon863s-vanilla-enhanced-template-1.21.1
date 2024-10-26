@@ -11,11 +11,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.RecipeSerializer;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
@@ -28,7 +24,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.COPPER_PEAR)
                 .pattern("CCC")
                 .pattern("CPC")
@@ -36,6 +31,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C', Items.COPPER_INGOT)
                 .input('P', ModItems.PEAR)
                 .criterion(hasItem(ModItems.PEAR), conditionsFromItem(ModItems.PEAR))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.AMETHYST_CHERRIES)
+                .pattern("AAA")
+                .pattern("ACA")
+                .pattern("AAA")
+                .input('A', Items.AMETHYST_SHARD)
+                .input('C', ModItems.CHERRIES)
+                .criterion(hasItem(ModItems.CHERRIES), conditionsFromItem(ModItems.CHERRIES))
+                .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.AMETHYST_CHERRIES)
+                .input(ModItems.CHERRIES)
+                .input(Blocks.AMETHYST_BLOCK)
+                .input(Blocks.AMETHYST_BLOCK)
+                .criterion(hasItem(ModItems.CHERRIES), conditionsFromItem(ModItems.CHERRIES))
+                .offerTo(recipeExporter, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "amethyst_cherries_from_blocks"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BOWL_OF_RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(ModItems.RICE)
+                .input(Items.BOWL)
+                .criterion(hasItem(ModItems.RICE), conditionsFromItem(ModItems.RICE))
+                .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.BOWL_OF_GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(ModItems.GOLDEN_RICE)
+                .input(Items.BOWL)
+                .criterion(hasItem(ModItems.GOLDEN_RICE), conditionsFromItem(ModItems.GOLDEN_RICE))
+                .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CORN_GRAINS, 6)
+                .input(ModItems.CORN)
+                .criterion(hasItem(ModItems.CORN), conditionsFromItem(ModItems.CORN))
                 .offerTo(recipeExporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MUD_BALL, 9)

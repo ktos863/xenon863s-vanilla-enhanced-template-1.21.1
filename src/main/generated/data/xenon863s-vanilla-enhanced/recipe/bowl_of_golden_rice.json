@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "xenon863s-vanilla-enhanced:golden_rice"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:bowl_of_golden_rice"
+  }
+}
