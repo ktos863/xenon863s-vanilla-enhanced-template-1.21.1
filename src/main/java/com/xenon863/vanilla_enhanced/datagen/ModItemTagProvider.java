@@ -42,6 +42,26 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIORITE_BRONZE_HOE)
                 .add(ModItems.GRANITE_BRONZE_HOE)
                 .add(ModItems.TUNGSTEN_HOE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.ANDESITE_BRONZE_HELMET)
+                .add(ModItems.DIORITE_BRONZE_HELMET)
+                .add(ModItems.GRANITE_BRONZE_HELMET)
+                .add(ModItems.TUNGSTEN_HELMET);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.ANDESITE_BRONZE_CHESTPLATE)
+                .add(ModItems.DIORITE_BRONZE_CHESTPLATE)
+                .add(ModItems.GRANITE_BRONZE_CHESTPLATE)
+                .add(ModItems.TUNGSTEN_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.ANDESITE_BRONZE_LEGGINGS)
+                .add(ModItems.DIORITE_BRONZE_LEGGINGS)
+                .add(ModItems.GRANITE_BRONZE_LEGGINGS)
+                .add(ModItems.TUNGSTEN_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.ANDESITE_BRONZE_BOOTS)
+                .add(ModItems.DIORITE_BRONZE_BOOTS)
+                .add(ModItems.GRANITE_BRONZE_BOOTS)
+                .add(ModItems.TUNGSTEN_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.AZALEA_PLANKS.asItem());

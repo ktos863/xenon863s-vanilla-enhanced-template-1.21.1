@@ -1,8 +1,8 @@
-// 1.21.1	2024-10-25T17:07:22.0746245	Xenon863's Vanilla Enhanced/Block Loot Tables
+// 1.21.1	2024-10-26T15:01:24.4695642	Xenon863's Vanilla Enhanced/Block Loot Tables
 ea59a965ccc0459b2e5d6cb8fc57731a9c03da02 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_granite_bronze.json
 f85ea76b8f3c70171ee95e55c737b00cba2b6bfa data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_slab.json
-a70abd6fd547765fb7569100e5596f6e74905a42 data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_stairs.json
 8895db9197e99575d807a58f0bdf0c507341d054 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_diorite_bronze.json
+a70abd6fd547765fb7569100e5596f6e74905a42 data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_stairs.json
 7dc4da55dbad30679c2a89b11b34a12816ba8494 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_andesite_bronze.json
 ca40de0624dee479299047b4cc7cde3e2091ba6c data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_pressure_plate.json
 efcc4359d16f3aae5fd01b94cb9e77810923d0d9 data\minecraft\loot_table\blocks\birch_leaves.json
