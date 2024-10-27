@@ -1,6 +1,8 @@
 package com.xenon863.vanilla_enhanced.datagen;
 
 import com.xenon863.vanilla_enhanced.block.ModBlocks;
+import com.xenon863.vanilla_enhanced.block.ModCrops;
+import com.xenon863.vanilla_enhanced.block.TallCrops;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -15,6 +17,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, ModCrops.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.GOLDEN_RICE_CROP, ModCrops.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, TallCrops.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_CORN);
+        BlockStateModelGenerator.BlockTexturePool cornBricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORN_BRICKS);
+        cornBricks.stairs(ModBlocks.CORN_BRICK_STAIRS);
+        cornBricks.slab(ModBlocks.CORN_BRICK_SLAB);
+        cornBricks.wall(ModBlocks.CORN_BRICK_WALL);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TERMITARY);
 
         blockStateModelGenerator.registerLog(ModBlocks.AZALEA_LOG).log(ModBlocks.AZALEA_LOG).wood(ModBlocks.AZALEA_WOOD);

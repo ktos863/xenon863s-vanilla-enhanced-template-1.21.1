@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "xenon863s-vanilla-enhanced:item/granite_bronze_shovel"
-  }
-}

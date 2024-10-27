@@ -17,11 +17,11 @@ public class ModItems {
     public static final Item CHERRIES = registerItem("cherries", new Item(new Item.Settings().food(ModFoodComponent.CHERRIES)));
     public static final Item AMETHYST_CHERRIES = registerItem("amethyst_cherries", new Item(new Item.Settings().food(ModFoodComponent.AMETHYST_CHERRIES)));
 
-    public static final Item RICE = registerItem("rice", new Item(new Item.Settings().food(ModFoodComponent.RICE)));
+    public static final Item RICE = registerItem("rice", new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings().food(ModFoodComponent.RICE)));
     public static final Item BOWL_OF_RICE = registerItem("bowl_of_rice", new Item(new Item.Settings().food(ModFoodComponent.BOWL_OF_RICE)));
-    public static final Item GOLDEN_RICE = registerItem("golden_rice", new Item(new Item.Settings().food(ModFoodComponent.GOLDEN_RICE)));
+    public static final Item GOLDEN_RICE = registerItem("golden_rice", new AliasedBlockItem(ModBlocks.GOLDEN_RICE_CROP, new Item.Settings().food(ModFoodComponent.GOLDEN_RICE)));
     public static final Item BOWL_OF_GOLDEN_RICE = registerItem("bowl_of_golden_rice", new Item(new Item.Settings().food(ModFoodComponent.BOWL_OF_GOLDEN_RICE)));
-    public static final Item CORN_GRAINS = registerItem("corn_grains", new Item(new Item.Settings().food(ModFoodComponent.CORN_GRAINS)));
+    public static final Item CORN_GRAINS = registerItem("corn_grains", new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings().food(ModFoodComponent.CORN_GRAINS)));
     public static final Item CORN = registerItem("corn", new Item(new Item.Settings().food(ModFoodComponent.CORN)));
 
     public static final Item MUD_BALL = registerItem("mud_ball", new Item(new Item.Settings()));

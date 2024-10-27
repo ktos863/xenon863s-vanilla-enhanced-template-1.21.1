@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/button_inventory",
-  "textures": {
-    "texture": "xenon863s-vanilla-enhanced:block/azalea_planks"
-  }
-}
