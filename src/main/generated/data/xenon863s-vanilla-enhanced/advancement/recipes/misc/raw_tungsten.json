@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_block_of_corn": {
+    "has_block_of_raw_tungsten": {
       "conditions": {
         "items": [
           {
-            "items": "xenon863s-vanilla-enhanced:block_of_corn"
+            "items": "xenon863s-vanilla-enhanced:block_of_raw_tungsten"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "xenon863s-vanilla-enhanced:corn"
+        "recipe": "xenon863s-vanilla-enhanced:raw_tungsten"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_block_of_corn"
+      "has_block_of_raw_tungsten"
     ]
   ],
   "rewards": {
     "recipes": [
-      "xenon863s-vanilla-enhanced:corn"
+      "xenon863s-vanilla-enhanced:raw_tungsten"
     ]
   }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "xenon863s-vanilla-enhanced:block_of_raw_tungsten"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "xenon863s-vanilla-enhanced:raw_tungsten"
+  }
+}

@@ -16,6 +16,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.CORN_BRICKS)
+                .add(ModBlocks.CORN_BRICK_STAIRS)
+                .add(ModBlocks.CORN_BRICK_SLAB)
+                .add(ModBlocks.CORN_BRICK_WALL)
+                .add(ModBlocks.TUNGSTEN_ORE)
+                .add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE)
+                .add(ModBlocks.BLOCK_OF_RAW_TUNGSTEN)
                 .add(ModBlocks.BLOCK_OF_ANDESITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_DIORITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_GRANITE_BRONZE)
@@ -39,12 +46,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.TERMITARY);
 
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.BLOCK_OF_CORN);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BLOCK_OF_ANDESITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_DIORITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.TUNGSTEN_ORE)
+                .add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE)
+                .add(ModBlocks.BLOCK_OF_RAW_TUNGSTEN)
                 .add(ModBlocks.BLOCK_OF_TUNGSTEN);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)

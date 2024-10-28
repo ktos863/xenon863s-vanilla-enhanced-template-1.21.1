@@ -4,10 +4,9 @@ import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import com.xenon863.vanilla_enhanced.item.ArmorEffects;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-
-
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.minecraft.screen.slot.CraftingResultSlot;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.slf4j.Logger;

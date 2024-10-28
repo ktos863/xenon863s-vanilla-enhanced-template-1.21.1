@@ -10,11 +10,16 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.resource.featuretoggle.ToggleableFeature;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -74,7 +79,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.CORN)
                 .criterion(hasItem(ModItems.CORN), conditionsFromItem(ModItems.CORN))
                 .offerTo(recipeExporter);
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CORN)
+                .pattern("CC")
+                .pattern("CC")
+                .pattern("CC")
+                .input('C', ModItems.CORN_GRAINS)
+                .criterion(hasItem(ModItems.CORN_GRAINS), conditionsFromItem(ModItems.CORN_GRAINS))
+                .offerTo(recipeExporter, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "corn_from_corn_grains"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_CORN)
                 .pattern("CCC")
                 .pattern("CCC")
@@ -85,7 +96,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CORN, 9)
                 .input(ModBlocks.BLOCK_OF_CORN)
                 .criterion(hasItem(ModBlocks.BLOCK_OF_CORN), conditionsFromItem(ModBlocks.BLOCK_OF_CORN))
-                .offerTo(recipeExporter);
+                .offerTo(recipeExporter, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "corn_from_corn_block"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CORN_BRICKS, 4)
                 .pattern("CC")
                 .pattern("CC")
@@ -247,6 +258,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C', Items.COPPER_INGOT)
                 .input('G', Blocks.GRANITE)
                 .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_TUNGSTEN, 9)
+                .input(ModBlocks.BLOCK_OF_RAW_TUNGSTEN)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_RAW_TUNGSTEN),conditionsFromItem(ModBlocks.BLOCK_OF_RAW_TUNGSTEN))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BLOCK_OF_RAW_TUNGSTEN)
+                .pattern("TTT")
+                .pattern("TTT")
+                .pattern("TTT")
+                .input('T', ModItems.RAW_TUNGSTEN)
+                .criterion(hasItem(ModItems.RAW_TUNGSTEN), conditionsFromItem(ModItems.RAW_TUNGSTEN))
                 .offerTo(recipeExporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ANDESITE_BRONZE_INGOT, 9)
@@ -564,6 +587,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('I', ModItems.TUNGSTEN_INGOT)
                 .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
                 .offerTo(recipeExporter);
+
+        offerSmelting(ModItems.RAW_TUNGSTEN, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_raw");
+        offerSmelting(ModBlocks.TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_ore");
+        offerSmelting(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_deepslate_ore");
+
+    }
+
+    private static void offerSmelting(Item input, RecipeCategory category, Item output, int count, int experience, int smeltingTime, String recipeName) {
 
     }
 }

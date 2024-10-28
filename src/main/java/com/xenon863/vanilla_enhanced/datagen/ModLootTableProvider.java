@@ -1,6 +1,8 @@
 package com.xenon863.vanilla_enhanced.datagen;
 
 import com.xenon863.vanilla_enhanced.block.ModBlocks;
+import com.xenon863.vanilla_enhanced.block.ModCrops;
+import com.xenon863.vanilla_enhanced.block.TallCrops;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -11,10 +13,13 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.AnyOfLootCondition;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.TableBonusLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -27,6 +32,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+
+        BlockStatePropertyLootCondition.Builder riceDropBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.RICE_CROP).properties(StatePredicate
+                .Builder.create().exactMatch(ModCrops.AGE, 7));
+        addDrop(ModBlocks.RICE_CROP, cropDrops(ModBlocks.RICE_CROP, ModItems.RICE, ModItems.RICE, riceDropBuilder));
+        BlockStatePropertyLootCondition.Builder goldenRiceDropBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.GOLDEN_RICE_CROP).properties(StatePredicate
+                .Builder.create().exactMatch(ModCrops.AGE, 7));
+        addDrop(ModBlocks.GOLDEN_RICE_CROP, cropDrops(ModBlocks.GOLDEN_RICE_CROP, ModItems.GOLDEN_RICE, ModItems.GOLDEN_RICE, goldenRiceDropBuilder));
+        AnyOfLootCondition.Builder cornDropBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder
+                .create().exactMatch(TallCrops.AGE, 7)).or(BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder
+                .create().exactMatch(TallCrops.AGE, 15)));
+        addDrop(ModBlocks.CORN_CROP, cropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN_GRAINS, cornDropBuilder));
+
+        addDrop(ModBlocks.BLOCK_OF_CORN);
+        addDrop(ModBlocks.CORN_BRICKS);
+        addDrop(ModBlocks.CORN_BRICK_STAIRS);
+        addDrop(ModBlocks.CORN_BRICK_SLAB);
+        addDrop(ModBlocks.CORN_BRICK_WALL);
+
         addDrop(ModBlocks.TERMITARY);
 
         addDrop(Blocks.BIRCH_LEAVES, birchLeavesDrops(Blocks.BIRCH_LEAVES, Blocks.BIRCH_SAPLING, ModItems.PEAR, 0.05f));
@@ -46,12 +69,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AZALEA_PRESSURE_PLATE);
         addDrop(ModBlocks.AZALEA_BUTTON);
 
+        addDrop(ModBlocks.TUNGSTEN_ORE, oreDrops(ModBlocks.TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
+        addDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, oreDrops(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
+        addDrop(ModBlocks.BLOCK_OF_RAW_TUNGSTEN);
         addDrop(ModBlocks.BLOCK_OF_ANDESITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_TUNGSTEN);
 
     }
+
 
     public LootTable.Builder birchLeavesDrops(Block leaves, Block sapling, Item fruit, float... saplingChance) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);

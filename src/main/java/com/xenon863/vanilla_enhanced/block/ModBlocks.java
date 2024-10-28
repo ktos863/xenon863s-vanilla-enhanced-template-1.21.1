@@ -21,10 +21,10 @@ public class ModBlocks {
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "corn_crop"), new TallCrops(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     public static final Block BLOCK_OF_CORN = registerBlock("block_of_corn", new Block(AbstractBlock.Settings.create().strength(2f).burnable()));
-    public static final Block CORN_BRICKS = registerBlock("corn_bricks", new Block(AbstractBlock.Settings.create().strength(4f).burnable()));
-    public static final Block CORN_BRICK_STAIRS = registerBlock("corn_brick_stairs", new StairsBlock(ModBlocks.CORN_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(2f).burnable()));
-    public static final Block CORN_BRICK_SLAB = registerBlock("corn_brick_slab", new SlabBlock(AbstractBlock.Settings.create().strength(4f).burnable()));
-    public static final Block CORN_BRICK_WALL = registerBlock("corn_brick_wall", new WallBlock(AbstractBlock.Settings.create().strength(5f).burnable()));
+    public static final Block CORN_BRICKS = registerBlock("corn_bricks", new Block(AbstractBlock.Settings.create().strength(3f).burnable().requiresTool()));
+    public static final Block CORN_BRICK_STAIRS = registerBlock("corn_brick_stairs", new StairsBlock(ModBlocks.CORN_BRICKS.getDefaultState(), AbstractBlock.Settings.create().strength(3f).burnable().requiresTool()));
+    public static final Block CORN_BRICK_SLAB = registerBlock("corn_brick_slab", new SlabBlock(AbstractBlock.Settings.create().strength(3f).burnable().requiresTool()));
+    public static final Block CORN_BRICK_WALL = registerBlock("corn_brick_wall", new WallBlock(AbstractBlock.Settings.create().strength(3f).burnable().requiresTool()));
 
     public static final Block TERMITARY = registerBlock("termitary", new Block(AbstractBlock.Settings.create().strength(2f).sounds(BlockSoundGroup.ROOTED_DIRT)));
 
@@ -42,11 +42,13 @@ public class ModBlocks {
     public static final Block AZALEA_PRESSURE_PLATE = registerBlock("azalea_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(0.5f).burnable()));
     public static final Block AZALEA_BUTTON = registerBlock("azalea_button", new ButtonBlock(BlockSetType.OAK, 15, AbstractBlock.Settings.create().noCollision().strength(0.5f).burnable()));
 
-    public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore", new Block(AbstractBlock.Settings.create().strength(9).requiresTool()));
+    public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore", new Block(AbstractBlock.Settings.create().strength(9).requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore", new Block(AbstractBlock.Settings.create().strength(18).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block BLOCK_OF_RAW_TUNGSTEN = registerBlock("block_of_raw_tungsten", new Block(AbstractBlock.Settings.create().strength(18).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
     public static final Block BLOCK_OF_ANDESITE_BRONZE = registerBlock("block_of_andesite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block BLOCK_OF_DIORITE_BRONZE = registerBlock("block_of_diorite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block BLOCK_OF_GRANITE_BRONZE = registerBlock("block_of_granite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
-    public static final Block BLOCK_OF_TUNGSTEN = registerBlock("block_of_tungsten", new Block(AbstractBlock.Settings.create().strength(10).requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block BLOCK_OF_TUNGSTEN = registerBlock("block_of_tungsten", new Block(AbstractBlock.Settings.create().strength(20).requiresTool().sounds(BlockSoundGroup.METAL)));
 
 
     private static Block registerBlock(String name, Block block){
@@ -90,6 +92,8 @@ public class ModBlocks {
             entries.add(ModBlocks.TERMITARY);
             entries.add(ModBlocks.AZALEA_LOG);
             entries.add(ModBlocks.TUNGSTEN_ORE);
+            entries.add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+            entries.add(ModBlocks.BLOCK_OF_RAW_TUNGSTEN);
         });
     }
 }

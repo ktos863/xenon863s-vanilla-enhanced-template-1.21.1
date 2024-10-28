@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "xenon863s-vanilla-enhanced:raw_tungsten"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TTT",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:block_of_raw_tungsten"
+  }
+}

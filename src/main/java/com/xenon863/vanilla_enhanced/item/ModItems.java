@@ -4,6 +4,7 @@ import com.xenon863.vanilla_enhanced.Xenon863sVanillaEnhanced;
 import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -27,6 +28,7 @@ public class ModItems {
     public static final Item MUD_BALL = registerItem("mud_ball", new Item(new Item.Settings()));
     public static final Item THICK_STICK = registerItem("thick_stick", new Item(new Item.Settings()));
 
+    public static final Item RAW_TUNGSTEN = registerItem("raw_tungsten", new Item(new Item.Settings()));
     public static final Item ANDESITE_BRONZE_INGOT = registerItem("andesite_bronze_ingot", new Item(new Item.Settings()));
     public static final Item DIORITE_BRONZE_INGOT = registerItem("diorite_bronze_ingot", new Item(new Item.Settings()));
     public static final Item GRANITE_BRONZE_INGOT = registerItem("granite_bronze_ingot", new Item(new Item.Settings()));
@@ -135,6 +137,7 @@ public class ModItems {
             entries.add(ModItems.MUD_BALL);
             entries.add(ModItems.THICK_STICK);
 
+            entries.add(ModItems.RAW_TUNGSTEN);
             entries.add(ModItems.ANDESITE_BRONZE_INGOT);
             entries.add(ModItems.DIORITE_BRONZE_INGOT);
             entries.add(ModItems.GRANITE_BRONZE_INGOT);

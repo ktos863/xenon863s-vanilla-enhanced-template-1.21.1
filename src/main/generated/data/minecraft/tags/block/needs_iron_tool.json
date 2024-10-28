@@ -1,5 +1,8 @@
 {
   "values": [
+    "xenon863s-vanilla-enhanced:tungsten_ore",
+    "xenon863s-vanilla-enhanced:deepslate_tungsten_ore",
+    "xenon863s-vanilla-enhanced:block_of_raw_tungsten",
     "xenon863s-vanilla-enhanced:block_of_tungsten"
   ]
 }

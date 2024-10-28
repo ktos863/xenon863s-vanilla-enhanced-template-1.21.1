@@ -43,6 +43,9 @@ public class ModModelProvider extends FabricModelProvider {
         azaleaPlanks.pressurePlate(ModBlocks.AZALEA_PRESSURE_PLATE);
         azaleaPlanks.button(ModBlocks.AZALEA_BUTTON);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TUNGSTEN_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_RAW_TUNGSTEN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_ANDESITE_BRONZE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
@@ -64,6 +67,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MUD_BALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.THICK_STICK, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.RAW_TUNGSTEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANDESITE_BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIORITE_BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRANITE_BRONZE_INGOT, Models.GENERATED);
