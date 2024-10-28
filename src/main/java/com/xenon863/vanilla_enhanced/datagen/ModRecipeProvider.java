@@ -6,6 +6,7 @@ import com.xenon863.vanilla_enhanced.item.ModItems;
 import com.xenon863.vanilla_enhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancement.AdvancementCriterion;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -73,6 +74,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CORN_GRAINS, 6)
                 .input(ModItems.CORN)
                 .criterion(hasItem(ModItems.CORN), conditionsFromItem(ModItems.CORN))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOCK_OF_CORN)
+                .pattern("CCC")
+                .pattern("CCC")
+                .pattern("CCC")
+                .input('C', ModItems.CORN)
+                .criterion(hasItem(ModItems.CORN), conditionsFromItem(ModItems.CORN))
+                .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CORN, 9)
+                .input(ModBlocks.BLOCK_OF_CORN)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_CORN), conditionsFromItem(ModBlocks.BLOCK_OF_CORN))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CORN_BRICKS, 4)
+                .pattern("CC")
+                .pattern("CC")
+                .input('C', ModBlocks.BLOCK_OF_CORN)
+                .criterion(hasItem(ModBlocks.BLOCK_OF_CORN), conditionsFromItem(ModBlocks.BLOCK_OF_CORN))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CORN_BRICK_STAIRS, 4)
+                .pattern("B  ")
+                .pattern("BB ")
+                .pattern("BBB")
+                .input('B', ModBlocks.CORN_BRICKS)
+                .criterion(hasItem(ModBlocks.CORN_BRICKS), conditionsFromItem(ModBlocks.CORN_BRICKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CORN_BRICK_SLAB, 6)
+                .pattern("BBB")
+                .input('B', ModBlocks.CORN_BRICKS)
+                .criterion(hasItem(ModBlocks.CORN_BRICKS), conditionsFromItem(ModBlocks.CORN_BRICKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CORN_BRICK_WALL, 6)
+                .pattern("BBB")
+                .pattern("BBB")
+                .input('B', ModBlocks.CORN_BRICKS)
+                .criterion(hasItem(ModBlocks.CORN_BRICKS), conditionsFromItem(ModBlocks.CORN_BRICKS))
                 .offerTo(recipeExporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MUD_BALL, 9)

@@ -42,6 +42,7 @@ public class ModBlocks {
     public static final Block AZALEA_PRESSURE_PLATE = registerBlock("azalea_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.create().nonOpaque().strength(0.5f).burnable()));
     public static final Block AZALEA_BUTTON = registerBlock("azalea_button", new ButtonBlock(BlockSetType.OAK, 15, AbstractBlock.Settings.create().noCollision().strength(0.5f).burnable()));
 
+    public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore", new Block(AbstractBlock.Settings.create().strength(9).requiresTool()));
     public static final Block BLOCK_OF_ANDESITE_BRONZE = registerBlock("block_of_andesite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block BLOCK_OF_DIORITE_BRONZE = registerBlock("block_of_diorite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
     public static final Block BLOCK_OF_GRANITE_BRONZE = registerBlock("block_of_granite_bronze", new Block(AbstractBlock.Settings.create().strength(4).requiresTool().sounds(BlockSoundGroup.METAL)));
@@ -88,6 +89,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries ->{
             entries.add(ModBlocks.TERMITARY);
             entries.add(ModBlocks.AZALEA_LOG);
+            entries.add(ModBlocks.TUNGSTEN_ORE);
         });
     }
 }
