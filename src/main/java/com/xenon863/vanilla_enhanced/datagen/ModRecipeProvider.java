@@ -6,7 +6,6 @@ import com.xenon863.vanilla_enhanced.item.ModItems;
 import com.xenon863.vanilla_enhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.advancement.AdvancementCriterion;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -565,6 +564,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('I', ModItems.TUNGSTEN_INGOT)
                 .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
                 .offerTo(recipeExporter);
-        }
-    }
 
+    }
+}

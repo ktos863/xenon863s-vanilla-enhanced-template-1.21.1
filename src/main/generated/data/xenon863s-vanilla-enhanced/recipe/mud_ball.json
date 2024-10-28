@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:packed_mud"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "xenon863s-vanilla-enhanced:mud_ball"
+  }
+}

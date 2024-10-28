@@ -47,19 +47,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_TUNGSTEN);
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHERRIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_CHERRIES, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOWL_OF_RICE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GOLDEN_RICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOWL_OF_GOLDEN_RICE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CORN_GRAINS, Models.GENERATED);
         itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MUD_BALL, Models.GENERATED);
@@ -93,5 +92,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TUNGSTEN_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TUNGSTEN_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TUNGSTEN_HOE, Models.HANDHELD);
+
     }
 }

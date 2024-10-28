@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "xenon863s-vanilla-enhanced:item/bowl_of_rice"
+  }
+}

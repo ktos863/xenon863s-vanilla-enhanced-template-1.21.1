@@ -50,6 +50,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOCK_OF_DIORITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_TUNGSTEN);
+
     }
 
     public LootTable.Builder birchLeavesDrops(Block leaves, Block sapling, Item fruit, float... saplingChance) {
@@ -67,4 +68,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 );
 
     }
+
 }

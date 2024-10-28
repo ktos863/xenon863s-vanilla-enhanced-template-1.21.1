@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "xenon863s-vanilla-enhanced:block/corn_bricks",
+    "side": "xenon863s-vanilla-enhanced:block/corn_bricks",
+    "top": "xenon863s-vanilla-enhanced:block/corn_bricks"
+  }
+}

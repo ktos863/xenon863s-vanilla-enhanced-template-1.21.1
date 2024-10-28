@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xenon863s-vanilla-enhanced:block/corn_brick_slab"
+    },
+    "type=double": {
+      "model": "xenon863s-vanilla-enhanced:block/corn_bricks"
+    },
+    "type=top": {
+      "model": "xenon863s-vanilla-enhanced:block/corn_brick_slab_top"
+    }
+  }
+}

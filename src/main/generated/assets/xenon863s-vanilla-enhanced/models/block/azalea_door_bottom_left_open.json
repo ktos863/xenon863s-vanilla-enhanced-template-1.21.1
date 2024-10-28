@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "xenon863s-vanilla-enhanced:block/azalea_door_bottom",
+    "top": "xenon863s-vanilla-enhanced:block/azalea_door_top"
+  }
+}

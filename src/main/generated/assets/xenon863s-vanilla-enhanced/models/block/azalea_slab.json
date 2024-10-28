@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "xenon863s-vanilla-enhanced:block/azalea_planks",
+    "side": "xenon863s-vanilla-enhanced:block/azalea_planks",
+    "top": "xenon863s-vanilla-enhanced:block/azalea_planks"
+  }
+}

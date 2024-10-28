@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_block_of_corn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "xenon863s-vanilla-enhanced:block_of_corn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "xenon863s-vanilla-enhanced:corn"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_block_of_corn"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "xenon863s-vanilla-enhanced:corn"
+    ]
+  }
+}
