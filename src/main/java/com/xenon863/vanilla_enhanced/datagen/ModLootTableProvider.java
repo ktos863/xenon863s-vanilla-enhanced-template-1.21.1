@@ -77,6 +77,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
         addDrop(ModBlocks.BLOCK_OF_TUNGSTEN);
 
+        addDrop(ModBlocks.FORESTERS_TABLE);
+        addDrop(ModBlocks.BLUEPRINT_TABLE);
+        addDrop(ModBlocks.MINERS_TABLE);
     }
 
 

@@ -26,7 +26,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLOCK_OF_ANDESITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_DIORITE_BRONZE)
                 .add(ModBlocks.BLOCK_OF_GRANITE_BRONZE)
-                .add(ModBlocks.BLOCK_OF_TUNGSTEN);
+                .add(ModBlocks.BLOCK_OF_TUNGSTEN)
+                .add(ModBlocks.MINERS_TABLE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.AZALEA_LOG)
@@ -41,7 +42,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AZALEA_DOOR)
                 .add(ModBlocks.AZALEA_TRAPDOOR)
                 .add(ModBlocks.AZALEA_PRESSURE_PLATE)
-                .add(ModBlocks.AZALEA_BUTTON);
+                .add(ModBlocks.AZALEA_BUTTON)
+                .add(ModBlocks.FORESTERS_TABLE)
+                .add(ModBlocks.BLUEPRINT_TABLE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.TERMITARY);

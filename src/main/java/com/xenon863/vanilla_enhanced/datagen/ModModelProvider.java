@@ -6,9 +6,8 @@ import com.xenon863.vanilla_enhanced.block.TallCrops;
 import com.xenon863.vanilla_enhanced.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -51,6 +50,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_GRANITE_BRONZE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_TUNGSTEN);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FORESTERS_TABLE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUEPRINT_TABLE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MINERS_TABLE);
     }
 
     @Override

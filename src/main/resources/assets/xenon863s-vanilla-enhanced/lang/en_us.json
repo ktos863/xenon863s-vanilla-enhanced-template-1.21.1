@@ -5,6 +5,13 @@
   "item.xenon863s-vanilla-enhanced.bowl_of_rice": "Bowl of Rice",
   "item.xenon863s-vanilla-enhanced.golden_rice": "Golden Rice",
   "item.xenon863s-vanilla-enhanced.bowl_of_golden_rice": "Bowl of Golden Rice",
+  "item.xenon863s-vanilla-enhanced.corn_grains": "Corn Grains",
+  "item.xenon863s-vanilla-enhanced.corn": "Corn",
+  "item.xenon863s-vanilla-enhanced.block_of_corn": "Block of Corn",
+  "item.xenon863s-vanilla-enhanced.corn_bricks": "Corn Bricks",
+  "item.xenon863s-vanilla-enhanced.corn_brick_stairs": "Corn Brick Stairs",
+  "item.xenon863s-vanilla-enhanced.corn_brick_slab": "Corn Brick Slab",
+  "item.xenon863s-vanilla-enhanced.corn_brick_wall": "Corn Brick Wall",
 
   "item.xenon863s-vanilla-enhanced.mud_ball": "Mud Ball",
   "item.xenon863s-vanilla-enhanced.thick_stick": "Thick Stick",
@@ -25,6 +32,14 @@
   "block.xenon863s-vanilla-enhanced.azalea_pressure_plate": "Azalea Pressure Plate",
   "block.xenon863s-vanilla-enhanced.azalea_button": "Azalea Button",
 
+  "block.xenon863s-vanilla-enhanced.foresters_table": "Forester's Table",
+  "block.xenon863s-vanilla-enhanced.blueprint_table": "Blueprint Table",
+  "block.xenon863s-vanilla-enhanced.miners_table": "Miner's Table",
+
+  "block.xenon863s-vanilla-enhanced.tungsten_ore": "Tungsten Ore",
+  "block.xenon863s-vanilla-enhanced.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "item.xenon863s-vanilla-enhanced.raw_tungsten": "Raw Tungsten",
+  "block.xenon863s-vanilla-enhanced.block_of_raw_tungsten": "Block of Raw Tungsten",
   "item.xenon863s-vanilla-enhanced.andesite_bronze_ingot": "Andesite Bronze Ingot",
   "item.xenon863s-vanilla-enhanced.diorite_bronze_ingot": "Diorite Bronze Ingot",
   "item.xenon863s-vanilla-enhanced.granite_bronze_ingot": "Granite Bronze Ingot",

@@ -1,10 +1,12 @@
-// 1.21.1	2024-10-28T20:36:20.6938353	Xenon863's Vanilla Enhanced/Block Loot Tables
+// 1.21.1	2024-10-29T02:43:03.4128623	Xenon863's Vanilla Enhanced/Block Loot Tables
 16265d724eec67c2c6f3ff6ac1b923acbe97f491 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_raw_tungsten.json
 7dc4da55dbad30679c2a89b11b34a12816ba8494 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_andesite_bronze.json
+da410e8278922751470133e402676a95fc76daee data\xenon863s-vanilla-enhanced\loot_table\blocks\foresters_table.json
 df047cb29de04490952808ca7518b07aa70a1743 data\minecraft\loot_table\blocks\cherry_leaves.json
 bce3dfd767708a7ca0e3b0bdbd41e2556f4cee1a data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_fence_gate.json
 0834445880d6c5c70be59e1df43c1def027c7777 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_tungsten.json
 8ff783e185b9c10d681c602304bcfb7840682fa9 data\xenon863s-vanilla-enhanced\loot_table\blocks\corn_crop.json
+11b54cf6db11b5eae9302ff85e1503ec578adca5 data\xenon863s-vanilla-enhanced\loot_table\blocks\miners_table.json
 02f4c94d18a48f2a9e0bc4addbeb8a7bfa1cfac0 data\xenon863s-vanilla-enhanced\loot_table\blocks\corn_brick_stairs.json
 8de0a5498619d292c6423d49803230dba77e4e12 data\xenon863s-vanilla-enhanced\loot_table\blocks\termitary.json
 c5e410570a9cef55b130c29868242741dd670f66 data\xenon863s-vanilla-enhanced\loot_table\blocks\stripped_azalea_wood.json
@@ -13,14 +15,15 @@ f85ea76b8f3c70171ee95e55c737b00cba2b6bfa data\xenon863s-vanilla-enhanced\loot_ta
 8895db9197e99575d807a58f0bdf0c507341d054 data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_diorite_bronze.json
 a70abd6fd547765fb7569100e5596f6e74905a42 data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_stairs.json
 3fc1a63ddd32490e89547dd393c620fee62c3cd1 data\xenon863s-vanilla-enhanced\loot_table\blocks\deepslate_tungsten_ore.json
-efcc4359d16f3aae5fd01b94cb9e77810923d0d9 data\minecraft\loot_table\blocks\birch_leaves.json
-ca40de0624dee479299047b4cc7cde3e2091ba6c data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_pressure_plate.json
 4278c810c1af4f91f0c421106c50ecfe2d6b8c8a data\xenon863s-vanilla-enhanced\loot_table\blocks\block_of_corn.json
+ca40de0624dee479299047b4cc7cde3e2091ba6c data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_pressure_plate.json
+efcc4359d16f3aae5fd01b94cb9e77810923d0d9 data\minecraft\loot_table\blocks\birch_leaves.json
 4dd00c251a170f8dc9908390f771ea812c35ef6a data\xenon863s-vanilla-enhanced\loot_table\blocks\golden_rice_crop.json
 8789db5ac9e191a361f37903ad24bcf85581db19 data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_wood.json
 599c08a97f540c603f9b0e9f41f5b23ee1f94f3b data\xenon863s-vanilla-enhanced\loot_table\blocks\corn_brick_wall.json
 b3f303ef056f9a5f095fda1423f741ef0b599aa7 data\xenon863s-vanilla-enhanced\loot_table\blocks\corn_bricks.json
 74db3504b986c5b673290d7aa223850c57e00181 data\xenon863s-vanilla-enhanced\loot_table\blocks\stripped_azalea_log.json
+756c5cdaa9ccfba6ec1dbcc5adeddd77acaede92 data\xenon863s-vanilla-enhanced\loot_table\blocks\blueprint_table.json
 8fa336da64974acfe3db51c0da7d511ca25b2b9a data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_trapdoor.json
 e3632d2da04ec804f742ab0cdfe6a81fc1f73214 data\xenon863s-vanilla-enhanced\loot_table\blocks\corn_brick_slab.json
 32c3fd1f244af57e61dc85dc76399b1c0f8e48ac data\xenon863s-vanilla-enhanced\loot_table\blocks\azalea_planks.json

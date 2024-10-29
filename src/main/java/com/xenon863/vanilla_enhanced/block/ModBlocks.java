@@ -51,6 +51,10 @@ public class ModBlocks {
     public static final Block BLOCK_OF_TUNGSTEN = registerBlock("block_of_tungsten", new Block(AbstractBlock.Settings.create().strength(20).requiresTool().sounds(BlockSoundGroup.METAL)));
 
 
+    public static final Block FORESTERS_TABLE = registerBlock("foresters_table", new Block(AbstractBlock.Settings.create().strength(2).burnable()));
+    public static final Block BLUEPRINT_TABLE = registerBlock("blueprint_table", new Block(AbstractBlock.Settings.create().strength(2).burnable()));
+    public static final Block MINERS_TABLE = registerBlock("miners_table", new Block(AbstractBlock.Settings.create().strength(4).requiresTool()));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, name), block);
@@ -94,6 +98,12 @@ public class ModBlocks {
             entries.add(ModBlocks.TUNGSTEN_ORE);
             entries.add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
             entries.add(ModBlocks.BLOCK_OF_RAW_TUNGSTEN);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries ->{
+            entries.add(ModBlocks.FORESTERS_TABLE);
+            entries.add(ModBlocks.BLUEPRINT_TABLE);
+            entries.add(ModBlocks.MINERS_TABLE);
         });
     }
 }
