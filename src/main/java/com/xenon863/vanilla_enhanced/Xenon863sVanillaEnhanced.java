@@ -3,6 +3,8 @@ package com.xenon863.vanilla_enhanced;
 import com.xenon863.vanilla_enhanced.block.ModBlocks;
 import com.xenon863.vanilla_enhanced.item.ArmorEffects;
 import com.xenon863.vanilla_enhanced.item.ModItems;
+import com.xenon863.vanilla_enhanced.villagers.ModCustomTrades;
+import com.xenon863.vanilla_enhanced.villagers.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -21,7 +23,8 @@ public class Xenon863sVanillaEnhanced implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
+		ModCustomTrades.registerCustomTrades();
+		ModVillagers.registerVillagers();
 		ServerTickEvents.END_SERVER_TICK.register(this::onServerTick);
 	}
 

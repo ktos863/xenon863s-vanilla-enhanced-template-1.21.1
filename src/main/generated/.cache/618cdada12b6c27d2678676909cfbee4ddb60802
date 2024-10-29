@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-29T02:43:03.4088602	Xenon863's Vanilla Enhanced/Recipes
+// 1.21.1	2024-10-29T09:52:04.7939085	Xenon863's Vanilla Enhanced/Recipes
 ae815442598af9d3d216ba853c9683a88cbb6de4 data\xenon863s-vanilla-enhanced\advancement\recipes\food\corn_from_corn_grains.json
 baa60fc5d7433deb675bcd98027481dc9c45fe8c data\xenon863s-vanilla-enhanced\recipe\block_of_granite_bronze.json
 25737e057148f991797b93f510ce7ef0eabef299 data\xenon863s-vanilla-enhanced\recipe\copper_pear.json
@@ -7,8 +7,10 @@ e19a3867bd11e0c54eb87408c85d8009297043fb data\xenon863s-vanilla-enhanced\advance
 074c12bfafc114a458872625d2e345f462b81950 data\xenon863s-vanilla-enhanced\recipe\tungsten_helmet.json
 7ffd13acc9766d5a7a0caa489763c791e6f7599b data\xenon863s-vanilla-enhanced\recipe\diorite_bronze_shovel.json
 caea3d7932b198a07e82305bd03caca04934d9ee data\xenon863s-vanilla-enhanced\advancement\recipes\tools\granite_bronze_shovel.json
+51fdfee75c27b445748a9e3fb558c756a9b4c269 data\xenon863s-vanilla-enhanced\recipe\blueprint_table.json
 ebfb292d9725fa48a945f39e244025485143b849 data\xenon863s-vanilla-enhanced\advancement\recipes\building_blocks\block_of_tungsten.json
 129bb51a6eaf3b3ad26713811df65f79b678216b data\xenon863s-vanilla-enhanced\advancement\recipes\tools\andesite_bronze_hoe.json
+af7a5ec78bf7526e53602b0f336a175553897c09 data\xenon863s-vanilla-enhanced\advancement\recipes\misc\blueprint_table.json
 51916caa015f5b8929072453a50b8d8d51bc6149 data\xenon863s-vanilla-enhanced\recipe\granite_bronze_pickaxe.json
 f381d1268ce128e8cb7f02c4120b6c1b7b0b3eda data\xenon863s-vanilla-enhanced\recipe\chainmail_helmet.json
 dfa1daea560f2cb0c159e41e70eb9074a624bf5d data\xenon863s-vanilla-enhanced\advancement\recipes\building_blocks\packed_mud_from_mud_balls.json
@@ -27,6 +29,7 @@ e64d759e423b1b22866f33138da82c16de6cfbee data\xenon863s-vanilla-enhanced\advance
 7e307e82e0dbf6d0a2f951b06c4d560bb88b84ae data\xenon863s-vanilla-enhanced\recipe\granite_bronze_boots.json
 fee8c39cffd6239b81c85c1fb28d68593902cb6d data\xenon863s-vanilla-enhanced\recipe\tungsten_ingot.json
 e03639e35070568ce1c47fa4c0ad3b393012bab6 data\xenon863s-vanilla-enhanced\advancement\recipes\combat\diorite_bronze_sword.json
+948a9ac475ca216822fc617f9ad529adec237bff data\xenon863s-vanilla-enhanced\advancement\recipes\misc\miners_table.json
 185c6f17b34354eefa614fbc856e37deb1af8ffc data\xenon863s-vanilla-enhanced\advancement\recipes\building_blocks\block_of_granite_bronze.json
 44315ff2a24e371bc7548b0533e8fca589232765 data\xenon863s-vanilla-enhanced\advancement\recipes\misc\andesite_bronze_ingot_from_block_of_andesite_bronze.json
 bccd130219863a6f4db2dc78bff15b634d76816d data\xenon863s-vanilla-enhanced\advancement\recipes\tools\diorite_bronze_axe.json
@@ -83,6 +86,7 @@ ee4d28ac5240982259d8795f2a474fdc70b20103 data\xenon863s-vanilla-enhanced\advance
 098536df657f218ba64a0b9c5a5e6f8a9e518df7 data\xenon863s-vanilla-enhanced\recipe\chainmail_boots.json
 ee1fd1ed79e3b3f668a38edd6cfe51dc5cb17cad data\xenon863s-vanilla-enhanced\advancement\recipes\misc\granite_bronze_ingot_from_block_of_granite_bronze.json
 eab03bd5ff444a3c5f56f2a246242b386fc64cb0 data\xenon863s-vanilla-enhanced\recipe\mud_ball.json
+70842a41c962426eaa7517cdd55f453a4d286073 data\xenon863s-vanilla-enhanced\recipe\miners_table.json
 50ee15f98b86a7d80eb23b5977d7f143ac7e98c0 data\xenon863s-vanilla-enhanced\advancement\recipes\misc\andesite_bronze_ingot.json
 d322c2a1f7bf72732856ad39c189cb921781be78 data\xenon863s-vanilla-enhanced\advancement\recipes\building_blocks\block_of_corn.json
 b08a6d04f330a3447005edb19a08c20d3b9bc7e5 data\xenon863s-vanilla-enhanced\recipe\tungsten_axe.json
@@ -103,6 +107,7 @@ c9e4a26f4064acc8bd32b5cb559b09066a90bafc data\xenon863s-vanilla-enhanced\advance
 91eca41f73c986fcbcfe76e643891d1fc43dfcd4 data\xenon863s-vanilla-enhanced\advancement\recipes\combat\diorite_bronze_leggings.json
 411cdd55ae02e8866a17be00790e3bf23da9991a data\xenon863s-vanilla-enhanced\advancement\recipes\combat\chainmail_leggings.json
 68720b92422430378f583ad345d196d60d66c4d9 data\xenon863s-vanilla-enhanced\recipe\tungsten_boots.json
+76bcf9ad26e23ecc5d608f0984a5a8784019df63 data\xenon863s-vanilla-enhanced\recipe\foresters_table.json
 00216c0034ee4581d974d16080c6144c74164fb9 data\xenon863s-vanilla-enhanced\recipe\tungsten_hoe.json
 2c78f1729d21317444e9b65c9ca026e150aff916 data\xenon863s-vanilla-enhanced\recipe\granite_bronze_leggings.json
 b1ec9a9d892dd18a3f9250d6bbdbce45766c9884 data\xenon863s-vanilla-enhanced\recipe\corn_from_corn_block.json
@@ -153,6 +158,7 @@ c8366e904fbb21590164f98e68dd258c9ca2120c data\xenon863s-vanilla-enhanced\advance
 91b5afb19d7f4f407d6733662ef18a2ec03f38cc data\xenon863s-vanilla-enhanced\recipe\diorite_bronze_leggings.json
 13bd5234c74016ecdc0c6dba735b2701871a39dd data\xenon863s-vanilla-enhanced\recipe\bowl_of_rice.json
 f8c38c17854378653835f07b8dc7e11d73abbffe data\xenon863s-vanilla-enhanced\advancement\recipes\building_blocks\corn_brick_wall.json
+b2f9378cfaa22987c7eaebf079bebcf055cfc31a data\xenon863s-vanilla-enhanced\advancement\recipes\misc\foresters_table.json
 25eb7b77514e93df78bae879a8722a3576516c4b data\xenon863s-vanilla-enhanced\recipe\tungsten_sword.json
 391a2a00b087ee0837a2c5e5b4107d97b0699300 data\xenon863s-vanilla-enhanced\advancement\recipes\combat\granite_bronze_boots.json
 4710f9efe0b0c1b5ed62c9910129f0f8d000b345 data\xenon863s-vanilla-enhanced\recipe\granite_bronze_shovel.json

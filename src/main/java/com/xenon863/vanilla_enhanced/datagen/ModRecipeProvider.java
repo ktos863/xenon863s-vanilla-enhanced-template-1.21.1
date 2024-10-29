@@ -15,6 +15,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.resource.featuretoggle.ToggleableFeature;
 import net.minecraft.util.Identifier;
 
@@ -588,6 +589,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TUNGSTEN_INGOT), conditionsFromItem(ModItems.TUNGSTEN_INGOT))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.FORESTERS_TABLE)
+                .pattern("FF")
+                .pattern("PP")
+                .pattern("PP")
+                .input('P', ItemTags.PLANKS)
+                .input('F', ItemTags.FLOWERS)
+                .criterion(hasItem(Blocks.OAK_PLANKS), conditionsFromItem(Blocks.OAK_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BLUEPRINT_TABLE)
+                .pattern("pD")
+                .pattern("PP")
+                .pattern("PP")
+                .input('P', ItemTags.PLANKS)
+                .input('p', Items.PAPER)
+                .input('D', Items.BLUE_DYE)
+                .criterion(hasItem(Blocks.OAK_PLANKS), conditionsFromItem(Blocks.OAK_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MINERS_TABLE)
+                .pattern("CCC")
+                .pattern("CPC")
+                .pattern("CCC")
+                .input('C', Blocks.COBBLESTONE)
+                .input('P', Items.IRON_PICKAXE)
+                .criterion(hasItem(Blocks.COBBLESTONE), conditionsFromItem(Blocks.COBBLESTONE))
+                .offerTo(recipeExporter);
+
         offerSmelting(ModItems.RAW_TUNGSTEN, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_raw");
         offerSmelting(ModBlocks.TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_ore");
         offerSmelting(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_deepslate_ore");
@@ -595,6 +622,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private static void offerSmelting(Item input, RecipeCategory category, Item output, int count, int experience, int smeltingTime, String recipeName) {
-
     }
 }

@@ -36,6 +36,8 @@
   "block.xenon863s-vanilla-enhanced.blueprint_table": "Blueprint Table",
   "block.xenon863s-vanilla-enhanced.miners_table": "Miner's Table",
 
+  "entity.minecraft.villager.forester": "Forester",
+
   "block.xenon863s-vanilla-enhanced.tungsten_ore": "Tungsten Ore",
   "block.xenon863s-vanilla-enhanced.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
   "item.xenon863s-vanilla-enhanced.raw_tungsten": "Raw Tungsten",

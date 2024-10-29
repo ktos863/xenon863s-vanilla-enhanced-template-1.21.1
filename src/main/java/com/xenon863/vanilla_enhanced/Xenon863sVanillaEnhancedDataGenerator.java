@@ -15,6 +15,7 @@ public class Xenon863sVanillaEnhancedDataGenerator implements DataGeneratorEntry
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModPoiTagProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 	}
 }

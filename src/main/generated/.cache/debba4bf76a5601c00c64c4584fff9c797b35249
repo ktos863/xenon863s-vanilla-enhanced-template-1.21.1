@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-29T02:43:03.4038614	Xenon863's Vanilla Enhanced/Model Definitions
+// 1.21.1	2024-10-29T09:52:04.7869088	Xenon863's Vanilla Enhanced/Model Definitions
 c9f4aeffc13ce623d3ae01d2755c0c7a8104c109 assets\xenon863s-vanilla-enhanced\models\block\azalea_door_top_right.json
 0dfdb7cd7bf9409169f81c74dd03623183a3ee2d assets\xenon863s-vanilla-enhanced\models\block\rice_crop_stage4.json
 31b35bc69bd69ecef9506ab5715aee220645d0a5 assets\xenon863s-vanilla-enhanced\models\block\azalea_trapdoor_top.json
@@ -167,8 +167,8 @@ fe7b94bfabe48e361f1465e6071cf30624507865 assets\xenon863s-vanilla-enhanced\model
 b490c06840b1315386e7e0788a5605675fd57329 assets\xenon863s-vanilla-enhanced\models\item\bowl_of_golden_rice.json
 5b34beb586ef7d03d7fc3e78409ee62b83172c30 assets\xenon863s-vanilla-enhanced\models\block\azalea_stairs.json
 054875d41160e78bcb1205b2bb4ba40ed16d219e assets\xenon863s-vanilla-enhanced\models\block\azalea_door_bottom_left_open.json
-91e4129904de6d712d568c4d530da900149a9b45 assets\xenon863s-vanilla-enhanced\models\item\golden_rice.json
 bd613b04f26dff8b803ee1ff65cab88ea5bcbaa7 assets\xenon863s-vanilla-enhanced\models\block\stripped_azalea_log.json
+91e4129904de6d712d568c4d530da900149a9b45 assets\xenon863s-vanilla-enhanced\models\item\golden_rice.json
 952d24a4eccee761e332fef9a1d5b93047dc98d7 assets\xenon863s-vanilla-enhanced\models\item\andesite_bronze_shovel.json
 42bad3064dbea8fff5f2f1067091c5b302de9111 assets\xenon863s-vanilla-enhanced\models\block\azalea_trapdoor_open.json
 ea34b334deab0e297b61d6f3beecd9426c294044 assets\xenon863s-vanilla-enhanced\models\block\corn_brick_wall_post.json

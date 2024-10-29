@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "minecraft:flowers"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "FF",
+    "PP",
+    "PP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "xenon863s-vanilla-enhanced:foresters_table"
+  }
+}
