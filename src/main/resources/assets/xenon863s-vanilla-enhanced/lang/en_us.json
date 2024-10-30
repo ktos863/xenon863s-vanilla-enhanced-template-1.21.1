@@ -1,17 +1,19 @@
 {
   "item.xenon863s-vanilla-enhanced.pear": "Pear",
   "item.xenon863s-vanilla-enhanced.copper_pear": "Copper Pear",
+  "item.xenon863s-vanilla-enhanced.cherries": "Cherries",
+  "item.xenon863s-vanilla-enhanced.amethyst_cherries": "Amethyst Cherries",
   "item.xenon863s-vanilla-enhanced.rice": "Rice",
   "item.xenon863s-vanilla-enhanced.bowl_of_rice": "Bowl of Rice",
   "item.xenon863s-vanilla-enhanced.golden_rice": "Golden Rice",
   "item.xenon863s-vanilla-enhanced.bowl_of_golden_rice": "Bowl of Golden Rice",
   "item.xenon863s-vanilla-enhanced.corn_grains": "Corn Grains",
   "item.xenon863s-vanilla-enhanced.corn": "Corn",
-  "item.xenon863s-vanilla-enhanced.block_of_corn": "Block of Corn",
-  "item.xenon863s-vanilla-enhanced.corn_bricks": "Corn Bricks",
-  "item.xenon863s-vanilla-enhanced.corn_brick_stairs": "Corn Brick Stairs",
-  "item.xenon863s-vanilla-enhanced.corn_brick_slab": "Corn Brick Slab",
-  "item.xenon863s-vanilla-enhanced.corn_brick_wall": "Corn Brick Wall",
+  "block.xenon863s-vanilla-enhanced.block_of_corn": "Block of Corn",
+  "block.xenon863s-vanilla-enhanced.corn_bricks": "Corn Bricks",
+  "block.xenon863s-vanilla-enhanced.corn_brick_stairs": "Corn Brick Stairs",
+  "block.xenon863s-vanilla-enhanced.corn_brick_slab": "Corn Brick Slab",
+  "block.xenon863s-vanilla-enhanced.corn_brick_wall": "Corn Brick Wall",
 
   "item.xenon863s-vanilla-enhanced.mud_ball": "Mud Ball",
   "item.xenon863s-vanilla-enhanced.thick_stick": "Thick Stick",
@@ -37,6 +39,7 @@
   "block.xenon863s-vanilla-enhanced.miners_table": "Miner's Table",
 
   "entity.minecraft.villager.forester": "Forester",
+  "entity.minecraft.villager.engineer": "Engineer",
 
   "block.xenon863s-vanilla-enhanced.tungsten_ore": "Tungsten Ore",
   "block.xenon863s-vanilla-enhanced.deepslate_tungsten_ore": "Deepslate Tungsten Ore",

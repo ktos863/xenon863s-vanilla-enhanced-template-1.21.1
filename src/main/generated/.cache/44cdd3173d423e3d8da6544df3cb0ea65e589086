@@ -1,11 +1,11 @@
-// 1.21.1	2024-10-29T09:52:04.7839057	Xenon863's Vanilla Enhanced/Tags for minecraft:item
+// 1.21.1	2024-10-30T07:38:24.3225568	Xenon863's Vanilla Enhanced/Tags for minecraft:item
 dbb6246e15be17cf7b041c11a618f52841f32ca7 data\minecraft\tags\item\planks.json
 b2e15302fc1756fb2b562bcafea66e98b533ba6d data\minecraft\tags\item\wooden_stairs.json
 ce84f86f649c1ded267fe9d0457a0238e3e5f188 data\minecraft\tags\item\wooden_trapdoors.json
 a43ef087f492b9a530d102c0f8f66e50366868d0 data\minecraft\tags\item\leg_armor.json
 e7c2718321293a1ebbc5753ce8b4c4cc0f63fcc6 data\minecraft\tags\item\hoes.json
-6741b10ddf8b0f3a95f96b14ef79b1f6075b2daf data\minecraft\tags\item\head_armor.json
 45d7bbcffd57a6fcfdf8175db86254e609e597a0 data\minecraft\tags\item\fence_gates.json
+6741b10ddf8b0f3a95f96b14ef79b1f6075b2daf data\minecraft\tags\item\head_armor.json
 7f07fb183851971a95c1571c2955421183b42f70 data\minecraft\tags\item\wooden_buttons.json
 323ff265f1bdf12579e166df3a7ae0e50fc0bd0e data\minecraft\tags\item\axes.json
 543c36a9c9e5bf79111bfbdc936628345a4fe031 data\xenon863s-vanilla-enhanced\tags\item\azalea_logs.json

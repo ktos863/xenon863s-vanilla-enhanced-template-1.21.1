@@ -21,5 +21,7 @@ public class ModPoiTagProvider extends TagProvider<PointOfInterestType> {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE).addOptional(Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "forester_poi"));
+        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE).addOptional(Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "engineer_poi"));
+        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE).addOptional(Identifier.of(Xenon863sVanillaEnhanced.MOD_ID, "miner_poi"));
     }
 }

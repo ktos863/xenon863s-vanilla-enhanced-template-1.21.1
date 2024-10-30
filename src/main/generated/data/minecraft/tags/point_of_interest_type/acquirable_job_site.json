@@ -3,6 +3,14 @@
     {
       "id": "xenon863s-vanilla-enhanced:forester_poi",
       "required": false
+    },
+    {
+      "id": "xenon863s-vanilla-enhanced:engineer_poi",
+      "required": false
+    },
+    {
+      "id": "xenon863s-vanilla-enhanced:miner_poi",
+      "required": false
     }
   ]
 }
