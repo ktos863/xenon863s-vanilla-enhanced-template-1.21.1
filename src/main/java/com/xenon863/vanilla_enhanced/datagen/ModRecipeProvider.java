@@ -12,15 +12,11 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.resource.featuretoggle.ToggleableFeature;
 import net.minecraft.util.Identifier;
 
-import java.util.List;
-import java.util.Locale;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -612,13 +608,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("CCC")
                 .input('C', Blocks.COBBLESTONE)
                 .input('P', Items.IRON_PICKAXE)
-                .criterion(hasItem(Blocks.COBBLESTONE), conditionsFromItem(Blocks.COBBLESTONE))
+                .criterion(hasItem(Items.IRON_PICKAXE), conditionsFromItem(Items.IRON_PICKAXE))
                 .offerTo(recipeExporter);
 
         offerSmelting(ModItems.RAW_TUNGSTEN, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_raw");
         offerSmelting(ModBlocks.TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_ore");
         offerSmelting(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 200, "tungsten_from_deepslate_ore");
 
+        offerBlasting(ModItems.RAW_TUNGSTEN, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 100, "blasting_tungsten_from_raw");
+        offerBlasting(ModBlocks.TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 100, "blasting_tungsten_from_ore");
+        offerBlasting(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.asItem(), RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT, 1, 15, 100, "blasting_tungsten_from_deepslate_ore");
+    }
+
+    private void offerBlasting(Item input, RecipeCategory category, Item output, int count, int experience, int blastingTime, String tungstenFromRaw) {
     }
 
     private static void offerSmelting(Item input, RecipeCategory category, Item output, int count, int experience, int smeltingTime, String recipeName) {

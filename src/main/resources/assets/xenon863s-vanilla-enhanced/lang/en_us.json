@@ -40,6 +40,7 @@
 
   "entity.minecraft.villager.forester": "Forester",
   "entity.minecraft.villager.engineer": "Engineer",
+  "entity.minecraft.villager.miner": "Miner",
 
   "block.xenon863s-vanilla-enhanced.tungsten_ore": "Tungsten Ore",
   "block.xenon863s-vanilla-enhanced.deepslate_tungsten_ore": "Deepslate Tungsten Ore",

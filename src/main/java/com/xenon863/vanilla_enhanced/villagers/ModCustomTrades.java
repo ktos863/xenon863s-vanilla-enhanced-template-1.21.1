@@ -6,10 +6,22 @@ import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffers;
+import net.minecraft.village.VillagerProfession;
 
 public class ModCustomTrades {
 
     public static void registerCustomTrades(){
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
+            factories.add(new TradeOffers.SellItemFactory(ModItems.RICE, 1, 1, 1));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.CORN_GRAINS, 1, 1, 1));
+            factories.add(new TradeOffers.BuyItemFactory(ModItems.RICE, 20, 16, 2));
+            factories.add(new TradeOffers.BuyItemFactory(ModItems.CORN, 10, 16, 2));
+        });
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 5, factories -> {
+            factories.add(new TradeOffers.SellItemFactory(ModItems.GOLDEN_RICE, 3, 1, 20));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.BOWL_OF_GOLDEN_RICE, 4, 2, 20));
+        });
+
         TradeOfferHelper.registerVillagerOffers(ModVillagers.FORESTER, 1, factories -> {
             factories.add(new TradeOffers.BuyItemFactory(Blocks.ALLIUM.asItem(), 10, 16, 2));
             factories.add(new TradeOffers.BuyItemFactory(Blocks.AZURE_BLUET.asItem(), 10, 16, 2));
@@ -103,7 +115,7 @@ public class ModCustomTrades {
             factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_LAPIS_ORE.asItem(), 1, 4, 10));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.MINER, 4, factories -> {
-            factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_DIAMOND_ORE.asItem(), 20, 1, 15));
+            factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_GOLD_ORE.asItem(), 3, 1, 15));
             factories.add(new TradeOffers.BuyItemFactory(Items.DIAMOND_PICKAXE, 1, 2, 30, 15));
             factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_REDSTONE_ORE.asItem(), 2, 1, 15));
             factories.add(new TradeOffers.SellItemFactory(Blocks.REDSTONE_ORE.asItem(), 2, 1, 15));
@@ -114,7 +126,9 @@ public class ModCustomTrades {
             factories.add(new TradeOffers.SellItemFactory(Blocks.EMERALD_ORE.asItem(), 10, 1, 20));
             factories.add(new TradeOffers.SellItemFactory(Blocks.DIAMOND_ORE.asItem(), 20, 1, 20));
             factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_COAL_ORE.asItem(), 1, 2, 20));
-            factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_GOLD_ORE.asItem(), 3, 1, 20));
+            factories.add(new TradeOffers.SellItemFactory(Blocks.DEEPSLATE_DIAMOND_ORE.asItem(), 3, 1, 20));
+            factories.add(new TradeOffers.SellItemFactory(ModBlocks.TUNGSTEN_ORE.asItem(), 14, 1, 20));
+            factories.add(new TradeOffers.SellItemFactory(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.asItem(), 14, 1, 20));
         });
     }
 }
